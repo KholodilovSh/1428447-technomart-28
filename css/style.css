@@ -21,3 +21,10 @@ header .small {
   align-items: center;
   color: #FFFFFF;
 }
+
+header .order {
+  width: 150px;
+  height: 42px;
+  background-color: #63A63E;
+  text-align: center;
+}
