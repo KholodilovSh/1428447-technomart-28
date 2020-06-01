@@ -94,29 +94,80 @@
       <a href="">перфораторы</a>
     </li>
   </ul>
-  <!---
-  <section>
-    <section>
-      <h2>производители:</h2>
-      <ul>
-        <li><span>bosch</span><li>
-        <li><span>интерскол</span><li>
-        <li><span>makita</span><li>
-        <li><span>dewalt</span><li>
-        <li><span>hitachi</span><li>
-      </ul>
-    </section>
+  <h1>перфораторы</h1>
 
-    <section>
-      <h2>питание:</h2>
-      <ul>
-        <li><span>аккумуляторные</span><li>
-        <li><span>сетевые</span><li>
-      </ul>
-    </section>
-    <button>Показать</button>
+  <section>
+    <h2>фильтр:</h2>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <div>
+        <h3>цена:</h3>
+        <input type="range" name="price" min="0" max="30000" step="100">
+        <p> 0 - 30000</p>
+      </div>
+      <div>
+        <h3>производители:</h3>
+        <label>
+          <input type="checkbox" name="bosch" value="bosch" checked>
+          bosch
+        </label>
+        <label>
+          <input type="checkbox" name="интерскол" value="интерскол">
+          интерскол
+        </label>
+        <label>
+          <input type="checkbox" name="makita" value="makita" checked>
+          makita
+        </label>
+        <label>
+          <input type="checkbox" name="dewalt" value="dewalt">
+          dewalt
+        </label>
+        <label>
+          <input type="checkbox" name="hitachi" value="hitachi">
+          hitachi
+        </label>
+      </div>
+      <div>
+        <h3>питание:</h3>
+
+        <label>
+          <input type="radio" name="supply" value="accumulators" checked>
+          аккумуляторные
+        </label>
+        <label>
+          <input type="radio" name="supply" value="_220v">
+          сетевые
+        </label>
+      </div>
+      <button type="submit">Показать</button>
+    </form>
   </section>
-  --->
+  <section>
+    <h3>сортировка</h3>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <label>
+        <input type="radio" name="sort-variant" value="price" checked>
+        по цене
+      </label>
+      <label>
+        <input type="radio" name="sort-variant" value="type">
+        по типу
+      </label>
+      <label>
+        <input type="radio" name="sort-variant" value="functionality">
+        по функционалу
+      </label>
+      <label>
+        <input type="radio" name="sort-direction" value="up" checked>
+        <img src="img/icon-down-dir.png"  width="11" height="10" alt="сортировать по убыванию">
+      </label>
+      <label>
+        <input type="radio" name="sort-direction" value="down">
+        <img src="img/icon-down-dir.png"  width="11" height="10" alt="сортировать по возрастанию">
+      </label>
+      <!-- нет кнопки submit --->
+    </form>
+  </section>
   <section>
     <!---  Карточки товаров --->
     <ul>
