@@ -8,26 +8,57 @@
 <body>
 
 <header>
-  <a>
-    <img src="img/index-logo.svg" width="200" height="50" alt="Logotype TECHNMART">
+  <a  href="blank.html">
+    <img src="img/index-logo.svg" width="220" height="47" alt="логотип техномарт">
   </a>
   <p>
-  Интернет-магазин<br>
-  строительных материалов<br>
-  и инструментов для ремонта
+  Интернет-магазин строительных материалов и инструментов для ремонта
   </p>
-  <!--- Поиск это форма ее нужно будет добавить на 4 лекции--->
-  <!--- <p>Поиск:</p> --->
-  <ul>
-    <li><a href="">Закладки:</a></li>
-    <li><a href="">Корзина:</a></li>
-    <li><a href="">Оформить заказ</a></li>
-  </ul>
+  <form action="https://echo.htmlacademy.ru/courses" method="get">
+    <img src="img/icon-search.png" width="17" height="17">
+    <label>
+      Поиск: <input type="search" name="search">
+    </label>
+    <!-- Нет кнопки submit ?? -->
+  </form>
   <p>
-    <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+    <img src="img/icon-bookmark.png" width="14" height="16">
+    Закладки: 0
+    <!-- Число надо откуда-то взять-->
+  </p>
+  <p>
+    <img src="img/icon-cart.png" width="15" height="15">
+    Корзина: 0
+    <!-- Число надо откуда-то взять-->
+  </p>
+
+  <button type="button" width="150" height="42">
+    Оформить заказ
+  </button>
+
+  <p>
+    <div>
+      <a href="tel:+78125550555">
+        <img src="img/icon-phone.png" width="19" height="19">
+          +7 (812) 555-05-55
+      </a>
+    </div>
     <adress>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</adress>
   </p>
 
+  <p>
+    <a href="blank.html">
+      <img src="img/icon-user.png"  width="20" height="18">
+      Равшан Дажамшутович
+    </a>
+    <a href="blank.html">Мои заказы</a>
+    <img src="img/icon-spot.png"  width="6" height="7">
+    <a href="blank.html">Мой личный кабинет</a>
+    <a href="blank.html">
+      <img src="img/icon-logout.png"  width="20" height="17">
+    </a>
+  </p>
+  
   <nav>
     <ul>
       <li><a href="index.html">Главная</a></li>
