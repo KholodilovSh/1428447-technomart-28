@@ -97,38 +97,23 @@
       </div>
       <div>
         <h3>производители:</h3>
-        <label>
-          <input type="checkbox" name="bosch" value="bosch" checked>
-          bosch
-        </label>
-        <label>
-          <input type="checkbox" name="интерскол" value="интерскол">
-          интерскол
-        </label>
-        <label>
-          <input type="checkbox" name="makita" value="makita" checked>
-          makita
-        </label>
-        <label>
-          <input type="checkbox" name="dewalt" value="dewalt">
-          dewalt
-        </label>
-        <label>
-          <input type="checkbox" name="hitachi" value="hitachi">
-          hitachi
-        </label>
+        <input id="bosch" type="checkbox" name="bosch" value="bosch" checked>
+        <label for="bosch">bosch</label>
+        <input id="интерскол" type="checkbox" name="интерскол" value="интерскол">
+        <label for="интерскол">интерскол</label>
+        <input id="makita" type="checkbox" name="makita" value="makita" checked>
+        <label for="makita">makita</label>
+        <input id="dewalt" type="checkbox" name="dewalt" value="dewalt">
+        <label for="dewalt">dewalt</label>
+        <input id="hitachi" type="checkbox" name="hitachi" value="hitachi">
+        <label for="hitachi">hitachi</label>
       </div>
       <div>
         <h3>питание:</h3>
-
-        <label>
-          <input type="radio" name="supply" value="accumulators" checked>
-          аккумуляторные
-        </label>
-        <label>
-          <input type="radio" name="supply" value="_220v">
-          сетевые
-        </label>
+        <input id="accumulators" type="radio" name="supply" value="accumulators" checked>
+        <label for="accumulators">аккумуляторные</label>
+        <input id="_220v" type="radio" name="supply" value="_220v">
+        <label for="_220v">сетевые</label>
       </div>
       <button type="submit">Показать</button>
     </form>
@@ -136,26 +121,17 @@
   <section>
     <h3>сортировка</h3>
     <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <label>
-        <input type="radio" name="sort-variant" value="price" checked>
-        по цене
-      </label>
-      <label>
-        <input type="radio" name="sort-variant" value="type">
-        по типу
-      </label>
-      <label>
-        <input type="radio" name="sort-variant" value="functionality">
-        по функционалу
-      </label>
-      <label>
-        <input type="radio" name="sort-direction" value="up" checked>
-        сортировать по убыванию
-      </label>
-      <label>
-        <input type="radio" name="sort-direction" value="down">
-        сортировать по возрастанию
-      </label>
+      <input id="price" type="radio" name="sort-variant" value="price" checked>
+      <label for="price">по цене</label>
+      <input id="type" type="radio" name="sort-variant" value="type">
+      <label for="type">по типу</label>
+      <input id="functionality" type="radio" name="sort-variant" value="functionality">
+      <label for="functionality">по функционалу</label>
+
+      <input id="up" type="radio" name="sort-direction" value="up" checked>
+      <label for="up">сортировать по убыванию</label>
+      <input id="down" type="radio" name="sort-direction" value="down">
+      <label for="down">сортировать по возрастанию</label>
       <input type="submit">
     </form>
   </section>
