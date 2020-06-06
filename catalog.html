@@ -88,49 +88,82 @@
 
   <section>
     <h2>фильтр:</h2>
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <form action="https://echo.htmlacademy.ru/courses" method="get">
       <div>
         <h3>цена:</h3>
         <input type="range" name="price" min="0" max="30000" step="100">
         <p> 0 - 30000</p>
       </div>
-      <div>
-        <h3>производители:</h3>
-        <input id="bosch" type="checkbox" name="bosch" value="bosch" checked>
-        <label for="bosch">bosch</label>
-        <input id="интерскол" type="checkbox" name="интерскол" value="интерскол">
-        <label for="интерскол">интерскол</label>
-        <input id="makita" type="checkbox" name="makita" value="makita" checked>
-        <label for="makita">makita</label>
-        <input id="dewalt" type="checkbox" name="dewalt" value="dewalt">
-        <label for="dewalt">dewalt</label>
-        <input id="hitachi" type="checkbox" name="hitachi" value="hitachi">
-        <label for="hitachi">hitachi</label>
-      </div>
-      <div>
-        <h3>питание:</h3>
-        <input id="accumulators" type="radio" name="supply" value="accumulators" checked>
-        <label for="accumulators">аккумуляторные</label>
-        <input id="_220v" type="radio" name="supply" value="_220v">
-        <label for="_220v">сетевые</label>
-      </div>
+      <fieldset>
+        <legend>производители:</legend>
+        <ul>
+          <li>
+            <input id="filter-bosch" type="checkbox" name="bosch" checked>
+            <label for="filter-bosch">bosch</label>
+          </li>
+          <li>
+            <input id="filter-интерскол" type="checkbox" name="интерскол">
+            <label for="filter-интерскол">интерскол</label>
+          </li>
+          <li>
+            <input id="filter-makita" type="checkbox" name="makita" checked>
+            <label for="filter-makita">makita</label>
+          </li>
+          <li>
+            <input id="filter-dewalt" type="checkbox" name="dewalt">
+            <label for="filter-dewalt">dewalt</label>
+          </li>
+          <li>
+            <input id="filter-hitachi" type="checkbox" name="hitachi">
+            <label for="filter-hitachi">hitachi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>питание:</legend>
+        <ul>
+          <li>
+            <input id="filter-accumulators" type="radio" name="supply" value="accumulators" checked>
+            <label for="filter-accumulators">аккумуляторные</label>
+          </li>
+          <li>
+            <input id="filter-_220v" type="radio" name="supply" value="_220v">
+            <label for="filter-_220v">сетевые</label>
+          </li>
+        </ul>
+      </fieldset>
       <button type="submit">Показать</button>
     </form>
   </section>
   <section>
-    <h3>сортировка</h3>
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <input id="price" type="radio" name="sort-variant" value="price" checked>
-      <label for="price">по цене</label>
-      <input id="type" type="radio" name="sort-variant" value="type">
-      <label for="type">по типу</label>
-      <input id="functionality" type="radio" name="sort-variant" value="functionality">
-      <label for="functionality">по функционалу</label>
-
-      <input id="up" type="radio" name="sort-direction" value="up" checked>
-      <label for="up">сортировать по убыванию</label>
-      <input id="down" type="radio" name="sort-direction" value="down">
-      <label for="down">сортировать по возрастанию</label>
+    <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <fieldset>
+        <legend>сортировка</legend>
+        <ul>
+          <li>
+            <input id="sort-price" type="radio" name="sort-variant" value="price" checked>
+            <label for="sort-price">по цене</label>
+          </li>
+          <li>
+            <input id="sort-type" type="radio" name="sort-variant" value="type">
+            <label for="sort-type">по типу</label>
+          </li>
+          <li>
+            <input id="sort-functionality" type="radio" name="sort-variant" value="functionality">
+            <label for="sort-functionality">по функционалу</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input id="sort-up" type="radio" name="sort-direction" value="up" checked>
+            <label for="sort-up">сортировать по убыванию</label>
+          </li>
+          <li>
+            <input id="sort-down" type="radio" name="sort-direction" value="down">
+            <label for="sort-down">сортировать по возрастанию</label>
+          </li>
+        </ul>
+      </fieldset>
       <input type="submit">
     </form>
   </section>
