@@ -8,52 +8,56 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
 
-<header>
-  <a href="#">
+<header class="main-header">
+  <a href="#"  class="main-header-logo">
     <img src="img/index-logo.svg" width="220" height="47" alt="логотип техномарт">
   </a>
-  <p class="fullname">
+  <p class="our-description">
   Интернет-магазин
   строительных материалов
   и инструментов для ремонта
   </p>
-  <form action="https://echo.htmlacademy.ru/courses" method="get">
-    <input id="search" type="search" name="search">
-    <label for="search" class="visually-hidden" aria-label="поиск по сайту Техномарт">Поиск</label>
-    <button type="submit" class="visually-hidden"></button>
-  </form>
-  <p>
-    Закладки: 0
-  <!-- Число надо откуда-то взять-->
-  </p>
-  <p>
-    Корзина: 0
-  <!-- Число надо откуда-то взять-->
-  </p>
+  <div class="upper-string">
+    <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <input id="search" type="search" name="search">
+      <label for="search" class="visually-hidden" aria-label="поиск по сайту Техномарт">Поиск</label>
+      <button type="submit" class="visually-hidden"></button>
+    </form>
+    <p>
+      Закладки: 0
+    <!-- Число надо откуда-то взять-->
+    </p>
+    <p>
+      Корзина: 0
+    <!-- Число надо откуда-то взять-->
+    </p>
 
-  <button type="button" width="150" height="42">
-    Оформить заказ
-  </button>
-  <p>
+    <button class="order" type="button" width="150" height="42">
+      Оформить заказ
+    </button>
+  </div>
+    <p>
     <div>
-      <a href="tel:+78125550555">
+      <a href="tel:+78125550555"  class="telephone">
           +7 (812) 555-05-55
       </a>
     </div>
-    <adress>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</adress>
+    <adress class="header-adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</adress>
   </p>
-  <div>
-    <a href="#">
-      Войти
-    </a>
-  </div>
-  <div>
-    <a href="#">Регистрация</a>
+  <div class="user-navigation">
+    <div>
+      <a href="#">
+        Войти
+      </a>
+    </div>
+    <div>
+      <a href="#">Регистрация</a>
+    </div>
   </div>
   <nav>
-    <ul>
+    <ul class="site-navigation">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Компания</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -67,45 +71,55 @@
 
 <main>
   <h1 class="visually-hidden">компания "техномарт"</h1>
-  <section>
+  <section class="promo">
     <h2 class="visually-hidden">Промо-блок</h2>
-    <div>
+    <div class="feature materials">
       <h3>Материалы</h3>
       <a href="catalog.html">
-        <p>на любой вкус</p>
+        <div class="rectangle">
+          <p>на любой вкус</p>
+        </div>
       </a>
     </div>
-    <div>
+    <div class="feature instruments">
       <h3>Инструменты</h3>
       <a href="catalog.html">
-        <p>на все случаи жизни</p>
+        <div class="rectangle">
+          <p>на все случаи жизни</p>
+        </div>
       </a>
     </div>
-    <div>
+    <div class="feature technics">
       <h3>Техника</h3>
       <a href="catalog.html">
-        <p>для стройки</p>
+        <div class="rectangle">
+          <p>для стройки</p>
+        </div>
       </a>
     </div>
-    <div>
+    <div class="feature discount">
       <h3>Скидки 50%</h3>
       <a href="catalog.html">
-        <p>на 350 товаров</p>
+        <div class="rectangle">
+          <p>на 350 товаров</p>
+        </div>
       </a>
     </div>
-    <div>
+    <div class="feature delivery">
       <h3>Доставка</h3>
       <a href="catalog.html">
-        <p>бесплатно</p>
+        <div class="rectangle">
+          <p>бесплатно</p>
+        </div>
       </a>
     </div>
-    <div>
+    <div class="slider">
       <h3 class="visually-hidden">слайдер</h3>
-      <div>
-        <a href="catalog.html">
+      <a href="catalog.html">
+        <div class="rectangle">
           <p>открыть каталог</p>
-        </a>
-      </div>
+        </div>
+      </a>
       <input type="button">
         Стрелка Влево
       </input>
@@ -115,25 +129,25 @@
       <div>
         <h4 class="visually-hidden">стайдер</h4>
       </div>
-      <div>
+      <div class="slide">
         <h4>перфораторы</h4>
         <p>Настоящие мужские игрушки</p>
         <img src="img/perforators.jpg" width="620" height="266" alt="">
       </div>
-      <div>
+      <div class="slide">
         <h4>дрели</h4>
         <p>Соседям на радость!</p>
         <img src="img/drills.jpg" width="620" height="266" alt="">
       </div>
     </div>
   </section>
-  <section>
+  <section class="popular products">
     <h2>популярные товары:</h2>
-    <div>
-      <a href="catalog.html">
+    <a href="catalog.html">
+      <div class="rectangle">
         <p>все популярные товары</p>
-      </a>
-    </div>
+      </div>
+    </a>
     <ul>
       <li>
         <a href="#">
