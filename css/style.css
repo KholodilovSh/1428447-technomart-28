@@ -439,7 +439,32 @@ li {
 	width: 300px;
 }
 
+/* Футер Навигация */
+.footer-navigation {
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--footer-text-color);
+	background-color: var(--footer-nav-color);
+}
 
+.footer-navigation .adress {
+	color: var(--footer-adress-color);
+}
+
+.footer-navigation .links {
+	color: var(--footer-text-color1);
+}
+
+.under-footer{
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+	background-color: var(--lower-string-color);
+}
+
+.under-footer .link-footer {
+	color: var(--footer-text-color1);
+}
 
 /* Повышаем приоритет */
 .rectangle p {
