@@ -36,6 +36,7 @@
 	--basic-grey6:				#F7F3EC;
 	--basic-grey7: 				#3D546F;
 	--basic-grey8: 				#405069;
+	--basic-grey9:				#888888;
 	--basic-greylight: 		#C5C5C5;
 	--spetial-greylight:  #EAEAEA;
 
@@ -78,6 +79,11 @@
 	 /* Фон сервисы Доставка-Гарантия-Кредит */
   --background-service: var(--basic-grey2);
 	--fon-service: 				var(--basic-black1);
+
+	/* О компании*/
+	--background-about-us: var(--basic-grey9);
+	/* Контакты */
+	--background-contacts: var(--basic-grey9);
 
 	 /* Футер */
 	--footer-nav-color: 	var(--basic-black1);
@@ -210,13 +216,6 @@ li {
 	height: 38px;
 	background-color: var(--basic-red);
 	/* border: 1px dotted #000; */
-}
-
-.rectangle p {
-	font-size: 14px;
-	line-height: 18px;
-	color: var(--basic-white);
-	text-transform: uppercase;
 }
 
 /* PROMO */
@@ -380,4 +379,53 @@ li {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 30px;
+}
+
+/* О компании */
+
+.about-us {
+	background-color: : var(--background-about-us);
+}
+
+.about-us h2,
+.about-us p,
+.about-us li {
+	color: var(--basic-black);
+}
+
+.about-us h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.about-us .rectangle {
+	width: 220px;
+}
+
+.about-us li {
+	position: relative;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--basic-black);
+}
+
+.about-us li::before {
+	content: "";
+	position: absolute;
+	left: -37px;
+	top: 12px;
+	width: 25px;
+	height: 2px;
+	background-color: var(--basic-red);
+}
+
+
+
+/* Повышаем приоритет */
+.rectangle p {
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--basic-white);
+	text-transform: uppercase;
 }
