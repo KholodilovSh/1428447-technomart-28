@@ -27,14 +27,17 @@
 	--spetial-greenlight: #8ED78F;
 
 	/* оттенки серого*/
-	--basic-gray:					#A9A9A9;
-	--basic-gray1:				#F9F5F0;
-	--basic-gray2:				#F1F5F7;
-	--basic-gray3:				#F3F7F9;
-	--basic-gray4:				#F4F4F4;
-	--basic-gray5:				#F2F6F8;
-	--basic-gray6:				#F7F3EC;
+	--basic-grey :				#A9A9A9;
+	--basic-grey1:				#F9F5F0;
+	--basic-grey2:				#F1F5F7;
+	--basic-grey3:				#F3F7F9;
+	--basic-grey4:				#F4F4F4;
+	--basic-grey5:				#F2F6F8;
+	--basic-grey6:				#F7F3EC;
+	--basic-grey7: 				#3D546F;
 	--basic-greylight: 		#C5C5C5;
+	--spetial-greylight:  #EAEAEA;
+
 
 	/* оттенки красного*/
 	--basic-red: 					#EE3643;
@@ -66,18 +69,19 @@
 	--promo-delivery:     var(--basic-yellow);
 
 	 /* Фон Популярные Товары/Производители */
-	--fon-for-traders: 		var(--basic-gray1);
+	--fon-for-traders: 		var(--basic-grey1);
 	 /* Старая цена */
-	--text-old-price: 		var(--basic-grey);
+	--text-old-price: 		#A9A9A9;
+	--card-border:				var(--spetial-greylight);
 
 	 /* Фон сервисы Доставка-Гарантия-Кредит */
-  --basic-background: 	var(--basic-gray2);
+  --basic-background: 	var(--basic-grey2);
 	--fon-service: 				var(--basic-black1);
 
 	 /* Футер */
 	--footer-nav-color: 	var(--basic-black1);
-	--footer-text-color:  var(--basic-gray2);
-	--footer-adress-color:var(--basic-gray3);
+	--footer-text-color:  var(--basic-grey2);
+	--footer-adress-color:var(--basic-grey3);
 	--footer-text-color1: var(--spetial-yellowlight);
 	--lower-string-color: var(--basic-black3);
 
@@ -107,10 +111,10 @@
 	--marker-rest: 				var(--basic-green);
 	--marker-pointer:			var(--basic-black1);
 
-	--basic-grey: #3D546F;
+
 
   /*  В Figme рядом указано Linear 100% */
-  --spetial-greylight: #EAEAEA;
+
   --mark-done: var(--basic-green);
   --mark-warning: var(--spetial-yellow);
   --mark-mistake: var(--basic-red1);
@@ -204,7 +208,7 @@ li {
 	width: 192px;
 	height: 38px;
 	background-color: var(--basic-red);
-	border: 1px dotted #000;
+	/* border: 1px dotted #000; */
 }
 
 .rectangle p {
@@ -267,7 +271,53 @@ li {
 	text-transform: uppercase;
 	background-color: : var(--fon-for-traders);
 }
-/* .promo h3 {
-	font-size: 24px;
-	line-height: 30px;
-} */
+
+/* .product-cards p, */
+.product-cards h3 {
+	font-family: "PT Sans","Arial", sans-serif;
+	font-weight: bold;
+	color: var(--basic-black);
+}
+
+.product-cards h3 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.product-cards p {
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.product-cards .old-price {
+	color: var(--text-old-price);
+	text-decoration-line: line-through;
+}
+
+.card {
+	border: 1px solid var(--card-border);
+	/* box-sizing: border-box; */
+}
+
+.price {
+	position: relative;
+	width: 141px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.price::before,
+.price::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 19px;
+	height: 19px;
+}
+.price::before{
+	top: 0;
+	background-image: linear-gradient(45deg, var(--basic-red) 50%, var(--basic-white) 50%);
+}
+.price::after {
+	bottom: 0;
+	background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
+}
