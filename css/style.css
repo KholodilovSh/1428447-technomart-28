@@ -382,7 +382,6 @@ li {
 }
 
 /* О компании */
-
 .about-us {
 	background-color: : var(--background-about-us);
 }
@@ -418,6 +417,26 @@ li {
 	width: 25px;
 	height: 2px;
 	background-color: var(--basic-red);
+}
+
+/* Контакты */
+.contacts {
+	background-color: : var(--background-contacts);
+}
+
+.contacts h2,
+.contacts p {
+	color: var(--basic-black);
+}
+
+.contacts h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.contacts .rectangle {
+	width: 300px;
 }
 
 
