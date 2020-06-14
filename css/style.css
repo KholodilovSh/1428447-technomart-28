@@ -35,6 +35,7 @@
 	--basic-grey5:				#F2F6F8;
 	--basic-grey6:				#F7F3EC;
 	--basic-grey7: 				#3D546F;
+	--basic-grey8: 				#405069;
 	--basic-greylight: 		#C5C5C5;
 	--spetial-greylight:  #EAEAEA;
 
@@ -75,7 +76,7 @@
 	--card-border:				var(--spetial-greylight);
 
 	 /* Фон сервисы Доставка-Гарантия-Кредит */
-  --basic-background: 	var(--basic-grey2);
+  --background-service: var(--basic-grey2);
 	--fon-service: 				var(--basic-black1);
 
 	 /* Футер */
@@ -322,10 +323,7 @@ li {
 	background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
 }
 
-/* .manufactories ul {
-	display: flex;
-} */
-
+/* Популярные производители */
 .manufactories li {
 	display: flex;
 	justify-content: center;
@@ -333,4 +331,53 @@ li {
 	width: 220px;
 	height: 145px;
 	border: 1px solid var(--spetial-greylight);
+}
+
+/* Сервисы */
+.servicies {
+	background-color: : var(--background-service);
+}
+
+.servicies h2,
+.servicies p {
+	color: var(--basic-black);
+}
+
+.servicies h2,
+.servicies h3 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.servicies p {
+	font-family: "PT Sans","Arial", sans-serif;
+}
+
+.servicies li {
+	width: 240px;
+	height: 61px;
+	color: var(--basic-white);
+	background-color: var(--fon-service);
+	box-shadow:
+		0px 1px 0px var(--basic-black3),
+	  inset 0px 1px 0px var(--basic-grey8);
+}
+
+.servicies li:first-child {
+	color: var(--basic-text-color);
+	background-color: var(--basic-white);
+	box-shadow:
+		0px 1px 0px var(--basic-white);
+}
+
+.servicies .service-button {
+	padding-left: 22px;
+	padding-top: 13.5px;
+}
+
+.servicies label {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
 }
