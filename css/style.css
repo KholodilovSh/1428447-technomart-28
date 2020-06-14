@@ -321,3 +321,16 @@ li {
 	bottom: 0;
 	background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
 }
+
+/* .manufactories ul {
+	display: flex;
+} */
+
+.manufactories li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 145px;
+	border: 1px solid var(--spetial-greylight);
+}
