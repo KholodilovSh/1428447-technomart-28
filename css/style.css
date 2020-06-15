@@ -240,7 +240,7 @@ li {
 }
 
 /* main */
-.main-index,
+.index,
 .catalog {
   background-color: var(--basic-white);
 }
@@ -253,6 +253,32 @@ li {
 	height: 38px;
 	background-color: var(--basic-red);
 	/* border: 1px dotted #000; */
+}
+
+.white-rectangle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 121px;
+	height: 45px;
+	background-color: var(--basic-white);
+}
+
+.white-rectangle .login::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: 19px;
+	width: 20px;
+	height: 17px;
+	background-image: url("../img/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user-navigation .white-rectangle:last-of-type {
+	width: 150px;
 }
 
 /* PROMO */
@@ -556,6 +582,8 @@ li {
 	border-radius: 50%;
 	background-color: var(--basic-text-color);
 }
+
+
 
 /* Каталог-main */
 
