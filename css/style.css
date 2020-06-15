@@ -137,7 +137,6 @@ body {
 	line-height: 24px;
 	font-weight: 400;
 	color: var(--basic-text-color);
-  background-color: var(--basic-white);
 }
 
 a {
@@ -160,8 +159,14 @@ li {
 	list-style-type: none;
 }
 
-
 /* Header */
+.main-header {
+/* не наследуется дочерними
+	background-color: rgba(0, 0, 0, 0.0001); */
+/* вставил фиктивный цвет, чтобы отслеживать работу фона */
+	background-color: var(--basic-grey3);
+}
+
 .upper-string {
 	font-size:18px;
 	line-height: 24px;
@@ -182,9 +187,31 @@ li {
 }
 
 .telephone {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 270px;
+	height: 45px;
 	font-size: 21px;
 	line-height: 30px;
 	color: var(--basic-red);
+	border: 3px solid var(--basic-white);
+}
+
+.telephone a {
+	padding-left: 74px;
+}
+
+.telephone a::before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 39px;
+	width: 19px;
+	height: 19px;
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .header-adress {
@@ -213,6 +240,10 @@ li {
 }
 
 /* main */
+.main-index,
+.catalog {
+  background-color: var(--basic-white);
+}
 
 .rectangle {
 	display: flex;
@@ -470,6 +501,112 @@ li {
 
 .under-footer .link-footer {
 	color: var(--footer-text-color1);
+}
+
+/* Каталог-Хедер */
+.white-fon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 299px;
+	height: 45px;
+	background-color: var(--basic-white);
+}
+
+.white-fon .user::before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	width: 20px;
+	height: 18px;
+	background-image: url("../img/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.white-fon .out::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	right: 17px;
+	width: 20px;
+	height: 17px;
+	background-image: url("../img/icon-logout.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.my-navigation {
+	position: relative;
+}
+
+.my {
+	padding-left: 31px;
+}
+
+ .my-navigation .my:first-child::before {
+	content: "";
+	position: absolute;
+	left: 120px;
+	top: 10px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: var(--basic-text-color);
+}
+
+/* Каталог-main */
+
+.catalog {
+	font-family: "PT Sans","Arial", sans-serif;
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+
+.path {
+	display: flex;
+	background-color: var(--basic-white);
+}
+
+.path li {
+	position: relative;
+	margin-left: 40px;
+}
+
+.path a::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -20px;
+	width: 8px;
+	height: 12px;
+	background-image: url("../img/icon-right-small.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.path .home::before {
+		content: "";
+		position: absolute;
+		top: 7px;
+		width: 14px;
+		height: 12px;
+		background-image: url("../img/icon-home.svg");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+}
+
+
+
+.catalog h1 {
+	font-size: 30px;
+	line-height: 30px;
+	color: var(--basic-text-color);
+	background-color: var(--catalog-fon-perforators);
+	text-transform: uppercase;
 }
 
 /* Повышаем приоритет */
