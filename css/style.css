@@ -198,6 +198,12 @@ li {
 	color: var(--basic-black);
 }
 
+.user-navigation .my {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-text-color);
+}
+
 .site-navigation {
 	font-size: 18px;
 	line-height: 24px;

@@ -10,53 +10,56 @@
 
 <body>
 
-<header>
-  <a href="#">
+<header class="main-header">
+  <a href="#" class="main-header-logo">
     <img src="img/index-logo.svg" width="220" height="47" alt="логотип техномарт">
   </a>
-  <p>
+  <p class="our-description">
   Интернет-магазин строительных материалов и инструментов для ремонта
   </p>
-  <form action="https://echo.htmlacademy.ru/courses" method="get">
-    <label for="search" class="visually-hidden" aria-label="поиск по сайту Техномарт">Поиск</label>
-    <input id="search" type="search" name="search">
-    <input type="submit" class="visually-hidden">
-  </form>
+  <div  class="upper-string">
+    <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <label for="search" class="visually-hidden" aria-label="поиск по сайту Техномарт">Поиск</label>
+      <input id="search" type="search" name="search">
+      <input type="submit" class="visually-hidden">
+    </form>
 
-  <p>
-    Закладки: 0
-    <!-- Число надо откуда-то взять-->
-  </p>
-  <p>
-    Корзина: 0
-    <!-- Число надо откуда-то взять-->
-  </p>
+    <p>
+      Закладки: 0
+      <!-- Число надо откуда-то взять-->
+    </p>
+    <p>
+      Корзина: 0
+      <!-- Число надо откуда-то взять-->
+    </p>
 
-  <button type="button" width="150" height="42">
-    Оформить заказ
-  </button>
+    <button  class="order" type="button" width="150" height="42">
+      Оформить заказ
+    </button>
+  </div>
 
   <p>
     <div>
-      <a href="tel:+78125550555">
+      <a href="tel:+78125550555" class="telephone">
           +7 (812) 555-05-55
       </a>
     </div>
-    <adress>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</adress>
+    <adress class="header-adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</adress>
   </p>
-
-  <p>
-    <a href="#">
-      Равшан Дажамшутович
-    </a>
-    <a href="#">Мои заказы</a>
-    <a href="#">Мой личный кабинет</a>
-    <a href="#" alt="Выход">
-    </a>
-  </p>
+  <div class="user-navigation">
+    <p>
+      <a href="#">
+        Равшан Дажамшутович
+      </a>
+      <a href="#" class="my">Мои заказы</a>
+      <a href="#" class="my">Мой личный кабинет</a>
+      <a href="#" alt="Выход">
+      </a>
+    </p>
+  </div>
 
   <nav>
-    <ul>
+    <ul class="site-navigation">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Компания</a></li>
       <li><a href="#">Каталог</a></li>
@@ -71,7 +74,6 @@
 
 <main>
 
-  <ul>
     <li>
       <a href="index.html">
         Home
