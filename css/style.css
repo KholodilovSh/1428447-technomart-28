@@ -257,14 +257,20 @@ li {
 
 .white-rectangle {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   width: 121px;
   height: 45px;
   background-color: var(--basic-white);
 }
+.white-rectangle .login {
+  padding-right: 27px;
+}
 
+.white-rectangle .registr {
+  padding-right: 24px;
+}
 .white-rectangle .login::before {
   content: "";
   position: absolute;
