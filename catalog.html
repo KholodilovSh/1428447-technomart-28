@@ -17,21 +17,24 @@
   <p class="our-description">
   Интернет-магазин строительных материалов и инструментов для ремонта
   </p>
-  <div  class="upper-string">
-    <form action="https://echo.htmlacademy.ru/courses" method="get">
-      <label for="search" class="visually-hidden" aria-label="поиск по сайту Техномарт">Поиск</label>
-      <input id="search" type="search" name="search">
-      <input type="submit" class="visually-hidden">
-    </form>
-
-    <p>
-      Закладки: 0
-      <!-- Число надо откуда-то взять-->
-    </p>
-    <p>
-      Корзина: 0
-      <!-- Число надо откуда-то взять-->
-    </p>
+  <div class="upper-string">
+    <div class="upper-word">
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <input id="search" type="search" name="search" placeholder="Поиск">
+        <label for="search" class="visually-hidden" aria-label="поиск по сайту Техномарт">Поиск</label>
+        <button type="submit" class="visually-hidden"></button>
+      </form>
+    </div>
+    <div class="upper-word">
+      <p class="bookmark">
+        Закладки: 0
+      </p>
+    </div>
+    <div class="upper-word not-empty">
+      <p>
+        Корзина: 10
+      </p>
+    </div>
 
     <button  class="order" type="button" width="150" height="42">
       Оформить заказ

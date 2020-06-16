@@ -174,7 +174,51 @@ li {
   background-color: var(--upper-string);
 }
 
+.upper-word {
+  position: relative;
+  width: 136px;
+  height: 42px;
+}
+.upper-word p,
+.upper-word form {
+  padding-left: 35px;
+  padding-top: 9px;
+}
+.upper-word p::before,
+.upper-word form::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.upper-word .bookmark::before {
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+}
+
+.upper-word form::before {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icon-search.svg");
+}
+
+.not-empty {
+  background-color: var(--basic-red);
+}
+
 .order {
+  font-size: 18px;
+  line-height: 24px;
+  width: 150px;
+  height: 42px;
   background-color: var(--order-rest);
 }
 
