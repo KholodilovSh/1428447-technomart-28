@@ -1,242 +1,242 @@
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0;
+  border:0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 
 :root {
-	/* базовые цвета*/
-	--basic-white: 				#FFFFFF;
-	/* оттенки черного*/
-	--basic-black:				#000000;
-	--basic-black1:				#32425C;
-	--basic-black2:  			#161D29;
-	--basic-black3: 			#293449;
+  /* базовые цвета*/
+  --basic-white:        #FFFFFF;
+  /* оттенки черного*/
+  --basic-black:        #000000;
+  --basic-black1:       #32425C;
+  --basic-black2:       #161D29;
+  --basic-black3:       #293449;
 
-	/* оттенки зеленого*/
-	--basic-green:				#63A63E;
-	--basic-green1:       #5FBB2D;
-	--basic-green2:				#518534;
-	--basic-green3:				#367315;
-	--spetial-greenlight: #8ED78F;
+  /* оттенки зеленого*/
+  --basic-green:        #63A63E;
+  --basic-green1:       #5FBB2D;
+  --basic-green2:       #518534;
+  --basic-green3:       #367315;
+  --spetial-greenlight: #8ED78F;
 
-	/* оттенки серого*/
-	--basic-grey :				#A9A9A9;
-	--basic-grey1:				#F9F5F0;
-	--basic-grey2:				#F1F5F7;
-	--basic-grey3:				#F3F7F9;
-	--basic-grey4:				#F4F4F4;
-	--basic-grey5:				#F2F6F8;
-	--basic-grey6:				#F7F3EC;
-	--basic-grey7: 				#3D546F;
-	--basic-grey8: 				#405069;
-	--basic-grey9:				#888888;
-	--basic-greylight: 		#C5C5C5;
-	--spetial-greylight:  #EAEAEA;
+  /* оттенки серого*/
+  --basic-grey:         #A9A9A9;
+  --basic-grey1:        #F9F5F0;
+  --basic-grey2:        #F1F5F7;
+  --basic-grey3:        #F3F7F9;
+  --basic-grey4:        #F4F4F4;
+  --basic-grey5:        #F2F6F8;
+  --basic-grey6:        #F7F3EC;
+  --basic-grey7:        #3D546F;
+  --basic-grey8:        #405069;
+  --basic-grey9:        #888888;
+  --basic-greylight:    #C5C5C5;
+  --spetial-greylight:  #EAEAEA;
 
 
-	/* оттенки красного*/
-	--basic-red: 					#EE3643;
-	--basic-red1: 				#BA2732;
+  /* оттенки красного*/
+  --basic-red:          #EE3643;
+  --basic-red1:         #BA2732;
 
-	/* оттенки желтого*/
-	--basic-yellow:   		#FFC047;
-	--spetial-yellow:     #FFBF47;
-	--spetial-yellowlight:#FFD180;
+  /* оттенки желтого*/
+  --basic-yellow:       #FFC047;
+  --spetial-yellow:     #FFBF47;
+  --spetial-yellowlight:#FFD180;
 
-	/* прочие*/
-	--spetial-blue:       #3BBCE3;
-	--spetial-lilac:      #DC91D8;
+  /* прочие*/
+  --spetial-blue:       #3BBCE3;
+  --spetial-lilac:      #DC91D8;
 
-	/* цвет текста*/
-	--basic-text-color: var(--basic-black1);
+  /* цвет текста*/
+  --basic-text-color:   var(--basic-black1);
 
-	/* header */
-	--upper-string: 			var(--basic-black3);
-	--nav-color: 					var(--basic-black1);
-	--nav-color-shadow: 	var(--basic-black3);
+  /* header */
+  --upper-string:       var(--basic-black3);
+  --nav-color:          var(--basic-black1);
+  --nav-color-shadow:   var(--basic-black3);
 
-	/* main */
-	/* Фоны промо-блока */
-	--promo-materials:    var(--spetial-yellow);
-	--promo-instruments:  var(--spetial-blue);
-	--promo-technics:     var(--spetial-lilac);
-	--promo-discount:		  var(--spetial-greenlight);
-	--promo-delivery:     var(--basic-yellow);
+  /* main */
+  /* Фоны промо-блока */
+  --promo-materials:    var(--spetial-yellow);
+  --promo-instruments:  var(--spetial-blue);
+  --promo-technics:     var(--spetial-lilac);
+  --promo-discount:     var(--spetial-greenlight);
+  --promo-delivery:     var(--basic-yellow);
 
-	 /* Фон Популярные Товары/Производители */
-	--fon-for-traders: 		var(--basic-grey1);
-	 /* Старая цена */
-	--text-old-price: 		#A9A9A9;
-	--card-border:				var(--spetial-greylight);
+   /* Фон Популярные Товары/Производители */
+  --fon-for-traders:    var(--basic-grey1);
+   /* Старая цена */
+  --text-old-price:     var(--basic-grey);
+  --card-border:        var(--spetial-greylight);
 
-	 /* Фон сервисы Доставка-Гарантия-Кредит */
+   /* Фон сервисы Доставка-Гарантия-Кредит */
   --background-service: var(--basic-grey2);
-	--fon-service: 				var(--basic-black1);
+  --fon-service:        var(--basic-black1);
 
-	/* О компании*/
-	--background-about-us: var(--basic-grey9);
-	/* Контакты */
-	--background-contacts: var(--basic-grey9);
+  /* О компании*/
+  --background-about-us: var(--basic-grey9);
+  /* Контакты */
+  --background-contacts: var(--basic-grey9);
 
-	 /* Футер */
-	--footer-nav-color: 	var(--basic-black1);
-	--footer-text-color:  var(--basic-grey2);
-	--footer-adress-color:var(--basic-grey3);
-	--footer-text-color1: var(--spetial-yellowlight);
-	--lower-string-color: var(--basic-black3);
+   /* Футер */
+  --footer-nav-color:    var(--basic-black1);
+  --footer-text-color:   var(--basic-grey2);
+  --footer-adress-color: var(--basic-grey3);
+  --footer-text-color1:  var(--spetial-yellowlight);
+  --lower-string-color:  var(--basic-black3);
 
-	/* Форма Write Us */
-	--write-us-grey: 			var(--basic-grey);
-	--write-us-fon: 			var(--basic-grey4);
+  /* Форма Write Us */
+  --write-us-grey:       var(--basic-grey);
+  --write-us-fon:        var(--basic-grey4);
 
-	 /* Каталог */
-	--catalog-fon-perforators: 	var(--basic-grey5);
-	--catalog-fon-filters:			var(--basic-grey6);
+   /* Каталог */
+  --catalog-fon-perforators:  var(--basic-grey5);
+  --catalog-fon-filters:      var(--basic-grey6);
 
-	/* Цветовая динамика активных объектов
-	по стайлгайду */
-	--upper-string-click:	var(--basic-black2);
+  /* Цветовая динамика активных объектов
+  по стайлгайду */
+  --upper-string-click:  var(--basic-black2);
 
-	/* "Оформить заказ */
-	--order-rest: 				var(--basic-green);
-	--order-pointer:			var(--basic-green1);
+  /* "Оформить заказ */
+  --order-rest:          var(--basic-green);
+  --order-pointer:       var(--basic-green1);
 
-	 /* Купить - (Каталог) */
-  --bue-rest: 				var(--basic-green);
-	--bue-rest-pointer: var(--basic-green1);
-	--bue-rest-click:		var(--basic-green2);
-	--bue-rest-shadow:	var(--basic-green3);
+   /* Купить - (Каталог) */
+  --bue-rest:           var(--basic-green);
+  --bue-rest-pointer:   var(--basic-green1);
+  --bue-rest-click:     var(--basic-green2);
+  --bue-rest-shadow:    var(--basic-green3);
 
-	 /* В закладки */
-	--marker-rest: 				var(--basic-green);
-	--marker-pointer:			var(--basic-black1);
+   /* В закладки */
+  --marker-rest:        var(--basic-green);
+  --marker-pointer:     var(--basic-black1);
 
 
 
   /*  В Figme рядом указано Linear 100% */
 
-  --mark-done: var(--basic-green);
+  --mark-done:    var(--basic-green);
   --mark-warning: var(--spetial-yellow);
   --mark-mistake: var(--basic-red1);
 }
 
 /* Global */
 body {
-	min-width: 1220px;
-	margin: 0;
-	padding: 0;
-	font-family: "Cuprum","Arial", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	font-weight: 400;
-	color: var(--basic-text-color);
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum","Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-text-color);
 }
 
 a {
-	color: inherit;
-	background-color: inherit;
-	text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
-	color: inherit;
-	border: none;
+  color: inherit;
+  border: none;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 /* Header */
 .main-header {
 /* не наследуется дочерними
-	background-color: rgba(0, 0, 0, 0.0001); */
+  background-color: rgba(0, 0, 0, 0.0001); */
 /* вставил фиктивный цвет, чтобы отслеживать работу фона */
-	background-color: var(--basic-grey3);
+  background-color: var(--basic-grey3);
 }
 
 .upper-string {
-	font-size:18px;
-	line-height: 24px;
-	color: var(--basic-white);
-	background-color: var(--upper-string);
+  font-size:18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--upper-string);
 }
 
 .order {
-	background-color: var(--order-rest);
+  background-color: var(--order-rest);
 }
 
 .our-description {
-	font-style: italic;
-	font-size: 16px;
-	line-height: 23px;
-	font-weight: 700;
-	color: var(--basic-red);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+  color: var(--basic-red);
 }
 
 .telephone {
-	display: flex;
-	align-items: center;
-	position: relative;
-	width: 270px;
-	height: 45px;
-	font-size: 21px;
-	line-height: 30px;
-	color: var(--basic-red);
-	border: 3px solid var(--basic-white);
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 270px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  border: 3px solid var(--basic-white);
 }
 
 .telephone a {
-	padding-left: 74px;
+  padding-left: 74px;
 }
 
 .telephone a::before {
-	content: "";
-	position: absolute;
-	top: 13px;
-	left: 39px;
-	width: 19px;
-	height: 19px;
-	background-image: url("../img/icon-phone.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 39px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-adress {
-	font-size: 14px;
-	line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .user-navigation {
-	font-size: 21px;
-	line-height: 21px;
-	color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
 }
 
 .user-navigation .my {
-	font-size: 16px;
-	line-height: 18px;
-	color: var(--basic-text-color);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-text-color);
 }
 
 .site-navigation {
-	font-size: 18px;
-	line-height: 24px;
-	color: var(--basic-white);
-	background: var(--nav-color);
-	box-shadow: inset 0px -5px 0px var(--nav-color-shadow);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background: var(--nav-color);
+  box-shadow: inset 0px -5px 0px var(--nav-color-shadow);
 }
 
 /* main */
@@ -246,341 +246,341 @@ li {
 }
 
 .rectangle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 192px;
-	height: 38px;
-	background-color: var(--basic-red);
-	/* border: 1px dotted #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
+  /* border: 1px dotted #000; */
 }
 
 .white-rectangle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	width: 121px;
-	height: 45px;
-	background-color: var(--basic-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 121px;
+  height: 45px;
+  background-color: var(--basic-white);
 }
 
 .white-rectangle .login::before {
-	content: "";
-	position: absolute;
-	top: 14px;
-	left: 19px;
-	width: 20px;
-	height: 17px;
-	background-image: url("../img/icon-login.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .user-navigation .white-rectangle:last-of-type {
-	width: 150px;
+  width: 150px;
 }
 
 /* PROMO */
 .promo h3,
 .promo h4,
 .promo p {
-	color: var(--basic-white);
+  color: var(--basic-white);
 }
 
 .promo h3 {
-	font-size: 24px;
-	line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .feature  .rectangle {
-	width: 135px;
-	background: var(--basic-white);
-	opacity: 0.3;
+  width: 135px;
+  background: var(--basic-white);
+  opacity: 0.3;
 }
 
 .promo .materials {
-	background: var(--promo-materials);
+  background: var(--promo-materials);
 }
 
 .promo .instruments {
-	background: var(--promo-instruments);
+  background: var(--promo-instruments);
 }
 
 .promo .technics {
-	background: var(--promo-technics);
+  background: var(--promo-technics);
 }
 
 .promo .discount {
-	background: var(--promo-discount);
+  background: var(--promo-discount);
 }
 
 .promo .delivery{
-	background: var(--promo-delivery);
+  background: var(--promo-delivery);
 }
 
 .slide p,
 .slide h4 {
-	background-color: var(--basic-grey);
+  background-color: var(--basic-grey);
 }
 
 .slider h4 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* Популярные товары/производители */
 
 .popular h2 {
-	text-transform: uppercase;
-	background-color: : var(--fon-for-traders);
+  text-transform: uppercase;
+  background-color: : var(--fon-for-traders);
 }
 
 /* .product-cards p, */
 .product-cards h3 {
-	font-family: "PT Sans","Arial", sans-serif;
-	font-weight: bold;
-	color: var(--basic-black);
+  font-family: "PT Sans","Arial", sans-serif;
+  font-weight: bold;
+  color: var(--basic-black);
 }
 
 .product-cards h3 {
-	font-size: 18px;
-	line-height: 20px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .product-cards p {
-	font-size: 17px;
-	line-height: 18px;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .product-cards .old-price {
-	color: var(--text-old-price);
-	text-decoration-line: line-through;
+  color: var(--text-old-price);
+  text-decoration-line: line-through;
 }
 
 .card {
-	border: 1px solid var(--card-border);
-	/* box-sizing: border-box; */
+  border: 1px solid var(--card-border);
+  /* box-sizing: border-box; */
 }
 
 .price {
-	position: relative;
-	width: 141px;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
+  position: relative;
+  width: 141px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .price::before,
 .price::after {
-	content: "";
-	position: absolute;
-	right: 0;
-	width: 19px;
-	height: 19px;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 19px;
+  height: 19px;
 }
 .price::before{
-	top: 0;
-	background-image: linear-gradient(45deg, var(--basic-red) 50%, var(--basic-white) 50%);
+  top: 0;
+  background-image: linear-gradient(45deg, var(--basic-red) 50%, var(--basic-white) 50%);
 }
 .price::after {
-	bottom: 0;
-	background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
+  bottom: 0;
+  background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
 }
 
 /* Популярные производители */
 .manufactories li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 220px;
-	height: 145px;
-	border: 1px solid var(--spetial-greylight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--spetial-greylight);
 }
 
 /* Сервисы */
 .servicies {
-	background-color: : var(--background-service);
+  background-color: : var(--background-service);
 }
 
 .servicies h2,
 .servicies p {
-	color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .servicies h2,
 .servicies h3 {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .servicies p {
-	font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans","Arial", sans-serif;
 }
 
 .servicies li {
-	width: 240px;
-	height: 61px;
-	color: var(--basic-white);
-	background-color: var(--fon-service);
-	box-shadow:
-		0px 1px 0px var(--basic-black3),
-	  inset 0px 1px 0px var(--basic-grey8);
+  width: 240px;
+  height: 61px;
+  color: var(--basic-white);
+  background-color: var(--fon-service);
+  box-shadow:
+    0px 1px 0px var(--basic-black3),
+    inset 0px 1px 0px var(--basic-grey8);
 }
 
 .servicies li:first-child {
-	color: var(--basic-text-color);
-	background-color: var(--basic-white);
-	box-shadow:
-		0px 1px 0px var(--basic-white);
+  color: var(--basic-text-color);
+  background-color: var(--basic-white);
+  box-shadow:
+    0px 1px 0px var(--basic-white);
 }
 
 .servicies .service-button {
-	padding-left: 22px;
-	padding-top: 13.5px;
+  padding-left: 22px;
+  padding-top: 13.5px;
 }
 
 .servicies label {
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 30px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /* О компании */
 .about-us {
-	background-color: : var(--background-about-us);
+  background-color: : var(--background-about-us);
 }
 
 .about-us h2,
 .about-us p,
 .about-us li {
-	color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .about-us h2 {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .about-us .rectangle {
-	width: 220px;
+  width: 220px;
 }
 
 .about-us li {
-	position: relative;
-	font-size: 18px;
-	line-height: 24px;
-	color: var(--basic-black);
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
 }
 
 .about-us li::before {
-	content: "";
-	position: absolute;
-	left: -37px;
-	top: 12px;
-	width: 25px;
-	height: 2px;
-	background-color: var(--basic-red);
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 12px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
 }
 
 /* Контакты */
 .contacts {
-	background-color: : var(--background-contacts);
+  background-color: : var(--background-contacts);
 }
 
 .contacts h2,
 .contacts p {
-	color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .contacts h2 {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts .rectangle {
-	width: 300px;
+  width: 300px;
 }
 
 /* Футер Навигация */
 .footer-navigation {
-	font-size: 18px;
-	line-height: 24px;
-	color: var(--footer-text-color);
-	background-color: var(--footer-nav-color);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--footer-text-color);
+  background-color: var(--footer-nav-color);
 }
 
 .footer-navigation .adress {
-	color: var(--footer-adress-color);
+  color: var(--footer-adress-color);
 }
 
 .footer-navigation .links {
-	color: var(--footer-text-color1);
+  color: var(--footer-text-color1);
 }
 
 .under-footer{
-	font-size: 16px;
-	line-height: 18px;
-	color: var(--basic-white);
-	background-color: var(--lower-string-color);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--lower-string-color);
 }
 
 .under-footer .link-footer {
-	color: var(--footer-text-color1);
+  color: var(--footer-text-color1);
 }
 
 /* Каталог-Хедер */
 .white-fon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	width: 299px;
-	height: 45px;
-	background-color: var(--basic-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 299px;
+  height: 45px;
+  background-color: var(--basic-white);
 }
 
 .white-fon .user::before {
-	content: "";
-	position: absolute;
-	top: 13px;
-	left: 15px;
-	width: 20px;
-	height: 18px;
-	background-image: url("../img/icon-user.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .white-fon .out::before {
-	content: "";
-	position: absolute;
-	top: 14px;
-	right: 17px;
-	width: 20px;
-	height: 17px;
-	background-image: url("../img/icon-logout.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .my-navigation {
-	position: relative;
+  position: relative;
 }
 
 .my {
-	padding-left: 31px;
+  padding-left: 31px;
 }
 
  .my-navigation .my:first-child::before {
-	content: "";
-	position: absolute;
-	left: 120px;
-	top: 10px;
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background-color: var(--basic-text-color);
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--basic-text-color);
 }
 
 
@@ -588,59 +588,59 @@ li {
 /* Каталог-main */
 
 .catalog {
-	font-family: "PT Sans","Arial", sans-serif;
-	color: var(--basic-black);
-	text-transform: uppercase;
+  font-family: "PT Sans","Arial", sans-serif;
+  color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 
 .path {
-	display: flex;
-	background-color: var(--basic-white);
+  display: flex;
+  background-color: var(--basic-white);
 }
 
 .path li {
-	position: relative;
-	margin-left: 40px;
+  position: relative;
+  margin-left: 40px;
 }
 
 .path a::before {
-	content: "";
-	position: absolute;
-	top: 7px;
-	left: -20px;
-	width: 8px;
-	height: 12px;
-	background-image: url("../img/icon-right-small.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -20px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .path .home::before {
-		content: "";
-		position: absolute;
-		top: 7px;
-		width: 14px;
-		height: 12px;
-		background-image: url("../img/icon-home.svg");
-		background-repeat: no-repeat;
-		background-position: 0 0;
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 14px;
+    height: 12px;
+    background-image: url("../img/icon-home.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 
 
 .catalog h1 {
-	font-size: 30px;
-	line-height: 30px;
-	color: var(--basic-text-color);
-	background-color: var(--catalog-fon-perforators);
-	text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-text-color);
+  background-color: var(--catalog-fon-perforators);
+  text-transform: uppercase;
 }
 
 /* Повышаем приоритет */
 .rectangle p {
-	font-size: 14px;
-	line-height: 18px;
-	color: var(--basic-white);
-	text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
 }
