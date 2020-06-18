@@ -342,6 +342,9 @@ li {
   font-size: 24px;
   line-height: 30px;
 }
+.feature {
+  width: 300px;
+}
 
 .feature  .rectangle {
   width: 135px;
@@ -406,7 +409,9 @@ li {
   background-color: : var(--fon-for-traders);
 }
 
-/* .product-cards p, */
+.product-cards {
+
+}
 .product-cards h3 {
   font-family: "PT Sans","Arial", sans-serif;
   font-weight: bold;
@@ -429,8 +434,43 @@ li {
 }
 
 .card {
+  position: relative;
+  width: 220px;
+  height: 318px;
   border: 1px solid var(--card-border);
-  /* box-sizing: border-box; */
+}
+
+.card h3,
+.card p {
+  margin: 0;
+  text-align: center;
+}
+
+.card h3,
+.card .old-price,
+.card .price {
+  position: absolute;
+  width: 220px;
+  /* left: 50%;
+  transform: translate(-50%); */
+}
+
+.card h3 {
+  top: 178px;
+}
+.card .old-price {
+  top: 228px;
+}
+
+.card .price {
+  top: 259px;
+  left: 45px;
+  width: 141px;
+}
+
+.card:hover img {
+  visibility: hidden;
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); */
 }
 
 .price {
@@ -438,6 +478,7 @@ li {
   width: 141px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  margin: auto;
 }
 .price::before,
 .price::after {
