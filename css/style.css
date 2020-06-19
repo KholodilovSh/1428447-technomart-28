@@ -37,9 +37,9 @@
   --basic-grey7:        #3D546F;
   --basic-grey8:        #405069;
   --basic-grey9:        #888888;
+  --basic-grey10:        #E5E5E5;
   --basic-greylight:    #C5C5C5;
   --spetial-greylight:  #EAEAEA;
-
 
   /* оттенки красного*/
   --basic-red:          #EE3643;
@@ -747,6 +747,53 @@ li {
   color: var(--basic-text-color);
   background-color: var(--catalog-fon-perforators);
   text-transform: uppercase;
+}
+
+.pages {
+  width: 284px;
+  margin-left: 0;
+  margin-top: 48px;
+  margin-bottom: 59px;
+  padding: 0;
+  white-space: nowrap;
+  background-color: var(--basic-white);
+}
+
+.pages a {
+  display: inline-block;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  font-family: "PT Sans","Arial", sans-serif;
+  line-height: 38px;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--basic-black);
+  text-decoration: none;
+  border: 1px solid var(--basic-grey10);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pages .next {
+  width: 140px;
+}
+
+.pages .current {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.pages .disabled {
+  opacity: 0.3;
+}
+
+.pages a:hover {
+  border: 1px solid var(--basic-greylight);
+}
+
+.pages a:active {
+  border: 1px solid var(--basic-red);
 }
 
 /* Повышаем приоритет */
