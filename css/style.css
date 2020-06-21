@@ -43,7 +43,8 @@
 
   /* оттенки красного*/
   --basic-red:          #EE3643;
-  --basic-red1:         #BA2732;
+  --basic-red-on-click: #BA2732;
+  --basic-red-on-hover: #CA2C37;
 
   /* оттенки желтого*/
   --basic-yellow:       #FFC047;
@@ -124,7 +125,7 @@
 
   --mark-done:    var(--basic-green);
   --mark-warning: var(--spetial-yellow);
-  --mark-mistake: var(--basic-red1);
+  --mark-mistake: var(--basic-red-on-click);
 }
 
 /* Global */
@@ -299,6 +300,13 @@ li {
   /* border: 1px dotted #000; */
 }
 
+.rectangle:hover {
+  background-color: var(--basic-red-on-hover);
+}
+
+.rectangle:active {
+  background-color: var(--basic-red-on-click);
+}
 .white-rectangle {
   display: flex;
   justify-content: flex-end;
@@ -393,13 +401,101 @@ li {
   transform: rotate(45deg);
 }
 
-.slide p,
-.slide h4 {
-  background-color: var(--basic-grey);
+.slider,
+.slide {
+  position: relative;;
 }
 
-.slider h4 {
+.slider .rectangle,
+.slider .prev,
+.slider .next {
+  position: absolute;
+  z-index: 10;
+  border: none;
+}
+
+.slider .rectangle {
+  left: 24px;
+  top: 201px;
+}
+
+.slider .prev,
+.slider .next {
+  width: 22px;
+  height: 40px;
+  top: 122px;
+  background: transparent;
+}
+
+.slider .prev {
+  left: 24px;
+}
+
+.slider .next {
+  left: 578px;
+  transform: rotate(180deg);
+}
+
+.slider .prev:hover {
+  transform: scale(1.1);
+}
+
+.slider .next:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.slide p,
+.slide h4 {
+  position: absolute;
+  left: 24px;
+  background-color: transparent;
+}
+.slide h4 {
+  top: 23px;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
   text-transform: uppercase;
+}
+
+.slide p {
+  top: 64px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.slider .spots {
+  position: absolute;
+  top: 220px;
+  left: 295px;
+  width: 100%;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.spot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--basic-white);
+  z-index: 10;
+}
+
+.spot.checked::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--basic-red);
 }
 
 /* Популярные товары/производители */
@@ -495,6 +591,11 @@ li {
 .price::after {
   bottom: 0;
   background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
+}
+
+.price:hover {
+  /* Т.к. не ссылка убираем реакцию на hover */
+  background-color: var(--basic-red);
 }
 
 /* Популярные производители */
