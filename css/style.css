@@ -37,7 +37,7 @@
   --basic-grey7:        #3D546F;
   --basic-grey8:        #405069;
   --basic-grey9:        #888888;
-  --basic-grey10:        #E5E5E5;
+  --basic-grey10:       #E5E5E5;
   --basic-greylight:    #C5C5C5;
   --spetial-greylight:  #EAEAEA;
 
@@ -94,7 +94,8 @@
   --lower-string-color:  var(--basic-black3);
 
   /* Форма Write Us */
-  --write-us-grey:       var(--basic-grey);
+  --write-us-color:      var(--basic-grey);
+  --write-us-grey:       var(--basic-greylight);
   --write-us-fon:        var(--basic-grey4);
 
    /* Каталог */
@@ -897,7 +898,214 @@ li {
   border: 1px solid var(--basic-red);
 }
 
+/* скрытые окна */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  /* display: none; */
+  background-color: var(--basic-white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* .write-us {
+  display: none;
+} */
+
+.find-us {
+  display: none;
+}
+
+/* .modal-basket {
+  display: none;
+} */
+/* Modal close */
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+content: "";
+position: absolute;
+top: 10px;
+left: 2px;
+width: 30px;
+height: 4px;
+border-radius: 2px;
+background-color: var(--basic-red);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+/* Write-Us */
+.write-us {
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  height: 430px;
+  padding: 46px 0 0 0;
+  box-sizing: border-box;
+  border-top: 7px solid var(--basic-red);
+}
+
+.write-us p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--basic-black);
+}
+
+.write-us input,
+.write-us textarea {
+  font-size: 13px;
+  line-height: 24px;
+  border: 2px solid var(--write-us-grey);
+  border-radius: 2px;
+  color: var(--write-us-color);
+  box-sizing: border-box;
+}
+.write-us input {
+  width: 220px;
+  height: 38px;
+  margin-bottom: 48px;
+}
+
+.write-us textarea {
+  width: 460px;
+  height: 114px;
+}
+
+.write-us input:hover,
+.write-us textarea:hover,
+.write-us input:focus,
+.write-us textarea:focus {
+  border-color: var(--basic-black);
+}
+
+.write-us-form {
+  width: 100%;
+  height: 100%;
+  }
+
+.write-us-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 460px;
+  height: 235px;
+  margin: 46px auto;
+}
+
+.write-us-wrapper label {
+  position: absolute;
+  transform: translateY(-36px);
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 620px;
+  height: 112px;
+  background-color: var(--write-us-fon);
+}
+
+.modal-footer .rectangle {
+  width: 380px;
+}
+
+.find-us {
+  width: 943px;
+  height: 449px;
+  top: 120px;
+  bottom: auto;
+  border-top: 7px solid var(--basic-red);
+}
+
+.find-us img {
+  display: block;
+}
+
+.find-us iframe {
+  border: none;
+}
+
+.modal-basket {
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  height: 282px;
+  box-sizing: border-box;
+  border-top: 7px solid var(--basic-red);
+}
+
+.modal-basket p {
+  position: relative;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-left: 178px;
+  margin-top: 73px;
+  margin-bottom: 68px;
+  color: var(--basic-black);
+}
+
+.modal-basket p::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -100px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.modal-basket .rectangle,
+.modal-basket .white-rectangle  {
+  width: 192px;
+  margin-right: 10px;
+}
+
+.modal-basket .white-rectangle  {
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.modal-basket .white-rectangle:hover  {
+  font-weight: bold;
+}
+
+
+/*
+.modal-basket .rectangle {
+  font-size:
+} */
+
 /* Повышаем приоритет */
+.modal-basket .rectangle,
+button.rectangle,
 .rectangle p {
   font-size: 14px;
   line-height: 18px;
