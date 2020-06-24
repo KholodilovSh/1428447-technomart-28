@@ -152,12 +152,18 @@ img {
   box-sizing: border-box;
 }
 
-button {
+.main-header button,
+.slider button,
+.modal button,
+.catalog button {
   color: inherit;
   border: none;
 }
 
-li {
+.header li,
+.index li,
+.catalog li,
+.footer li {
   list-style-type: none;
 }
 
