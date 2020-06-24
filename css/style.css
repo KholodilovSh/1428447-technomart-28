@@ -152,6 +152,10 @@ img {
   height: auto;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 button {
   color: inherit;
   border: none;
@@ -873,7 +877,6 @@ li {
   color: var(--basic-black);
   text-decoration: none;
   border: 1px solid var(--basic-grey10);
-  box-sizing: border-box;
   border-radius: 2px;
 }
 
@@ -962,7 +965,6 @@ background-color: var(--basic-red);
   width: 620px;
   height: 430px;
   padding: 46px 0 0 0;
-  box-sizing: border-box;
   border-top: 7px solid var(--basic-red);
 }
 
@@ -980,7 +982,6 @@ background-color: var(--basic-red);
   border: 2px solid var(--write-us-grey);
   border-radius: 2px;
   color: var(--write-us-color);
-  box-sizing: border-box;
 }
 .write-us input {
   width: 220px;
@@ -1054,7 +1055,6 @@ background-color: var(--basic-red);
   bottom: auto;
   width: 620px;
   height: 282px;
-  box-sizing: border-box;
   border-top: 7px solid var(--basic-red);
 }
 
