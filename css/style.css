@@ -153,6 +153,7 @@ img {
 }
 
 .main-header button,
+.card button;
 .slider button,
 .modal button,
 .catalog button {
@@ -185,11 +186,14 @@ img {
   width: 136px;
   height: 42px;
 }
+
 .upper-word p,
 .upper-word form {
   padding-left: 35px;
   padding-top: 9px;
 }
+
+.bye p::before,
 .upper-word p::before,
 .upper-word form::before {
   content: "";
@@ -202,6 +206,11 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+}
+
+.bye p::before {
+  top: 10px;
+  left: 30px;
 }
 
 .upper-word .bookmark::before {
@@ -225,7 +234,9 @@ img {
   line-height: 24px;
   width: 150px;
   height: 42px;
+  color: var(--basic-white);
   background-color: var(--order-rest);
+  border: none;
 }
 
 .our-description {
@@ -555,6 +566,7 @@ img {
 .card h3 {
   top: 178px;
 }
+
 .card .old-price {
   top: 228px;
 }
@@ -565,8 +577,18 @@ img {
   width: 141px;
 }
 
+.card:focus,
+.card:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.card:focus img,
 .card:hover img {
   visibility: hidden;
+}
+
+.card:focus .green-rectangle,
+.card:hover .green-rectangle {
+  display: block;
 }
 
 .price {
@@ -596,6 +618,52 @@ img {
 .price:hover {
   /* Т.к. не ссылка убираем реакцию на hover */
   background-color: var(--basic-red);
+}
+
+.green-rectangle {
+  position: relative;
+  width: 135px;
+  height: 38px;
+  margin: 38px auto 10px;
+  border-radius: 2px;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  display: none;
+}
+
+.green-rectangle p {
+  margin-left: 29px;
+}
+
+.green-rectangle.bye {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--basic-green3);
+}
+
+.green-rectangle.take {
+  color: var(--basic-text-color);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+  margin-top: 10px;
+}
+
+.green-rectangle.bye:hover,
+.green-rectangle.bye:focus {
+  background-color: var(--bue-rest-pointer);
+}
+
+.green-rectangle.bye:active {
+  background-color: var(--bue-rest-click);
+}
+
+.green-rectangle.take:hover {
+  border-color: var(--basic-text-color);
+}
+
+.green-rectangle.take:active {
+  opacity: 0.5;
 }
 
 /* Популярные производители */
