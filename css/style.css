@@ -120,10 +120,6 @@
   --marker-rest:        var(--basic-green);
   --marker-pointer:     var(--basic-black1);
 
-
-
-  /*  В Figme рядом указано Linear 100% */
-
   --mark-done:    var(--basic-green);
   --mark-warning: var(--spetial-yellow);
   --mark-mistake: var(--basic-red-on-click);
@@ -167,8 +163,6 @@ li {
 
 /* Header */
 .main-header {
-/* не наследуется дочерними
-  background-color: rgba(0, 0, 0, 0.0001); */
 /* вставил фиктивный цвет, чтобы отслеживать работу фона */
   background-color: var(--basic-grey3);
 }
@@ -302,7 +296,6 @@ li {
   width: 192px;
   height: 38px;
   background-color: var(--basic-red);
-  /* border: 1px dotted #000; */
 }
 
 .rectangle:hover {
@@ -504,7 +497,6 @@ li {
 }
 
 /* Популярные товары/производители */
-
 .popular h2 {
   text-transform: uppercase;
   background-color: : var(--fon-for-traders);
@@ -552,8 +544,6 @@ li {
 .card .price {
   position: absolute;
   width: 220px;
-  /* left: 50%;
-  transform: translate(-50%); */
 }
 
 .card h3 {
@@ -571,7 +561,6 @@ li {
 
 .card:hover img {
   visibility: hidden;
-  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); */
 }
 
 .price {
@@ -801,16 +790,12 @@ li {
   background-color: var(--basic-text-color);
 }
 
-
-
 /* Каталог-main */
-
 .catalog {
   font-family: "PT Sans","Arial", sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
 }
-
 
 .path {
   display: flex;
@@ -909,24 +894,12 @@ li {
   bottom: 0;
   left: 0;
   margin: auto;
-  /* display: none; */
+  display: none;
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* .write-us {
-  display: none;
-} */
-
-.find-us {
-  display: none;
-}
-
-/* .modal-basket {
-  display: none;
-} */
 /* Modal close */
-
 .modal-close {
   position: absolute;
   top: 15px;
@@ -1096,12 +1069,6 @@ background-color: var(--basic-red);
 .modal-basket .white-rectangle:hover  {
   font-weight: bold;
 }
-
-
-/*
-.modal-basket .rectangle {
-  font-size:
-} */
 
 /* Повышаем приоритет */
 .modal-basket .rectangle,
