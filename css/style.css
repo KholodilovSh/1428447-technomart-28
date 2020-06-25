@@ -1012,9 +1012,13 @@ img {
   bottom: 0;
   left: 0;
   margin: auto;
-  display: none;
+  /* display: none; */
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.find-us {
+  display: none;
 }
 
 /* Modal close */
@@ -1031,14 +1035,14 @@ img {
 
 .modal-close::before,
 .modal-close::after {
-content: "";
-position: absolute;
-top: 10px;
-left: 2px;
-width: 30px;
-height: 4px;
-border-radius: 2px;
-background-color: var(--basic-red);
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--basic-red);
 }
 
 .modal-close::before {
@@ -1049,6 +1053,16 @@ background-color: var(--basic-red);
   transform: rotate(-45deg);
 }
 
+
+.modal-close:hover::after {
+  transform: scale(1.1)  rotate(-45deg);
+}
+
+.modal-close:hover::before {
+  transform: scale(1.1)  rotate(45deg);
+}
+
+
 /* Write-Us */
 .write-us {
   top: 120px;
@@ -1057,6 +1071,10 @@ background-color: var(--basic-red);
   height: 430px;
   padding: 46px 0 0 0;
   border-top: 7px solid var(--basic-red);
+}
+
+.write-us button {
+  border: none;
 }
 
 .write-us p {
@@ -1073,7 +1091,9 @@ background-color: var(--basic-red);
   border: 2px solid var(--write-us-grey);
   border-radius: 2px;
   color: var(--write-us-color);
+  padding: 7px 8px 7px 12px;
 }
+
 .write-us input {
   width: 220px;
   height: 38px;
@@ -1103,8 +1123,8 @@ background-color: var(--basic-red);
   justify-content: space-between;
   flex-wrap: wrap;
   width: 460px;
-  height: 235px;
-  margin: 46px auto;
+  height: 197px;
+  margin: 35px auto 37px;
 }
 
 .write-us-wrapper label {
@@ -1122,7 +1142,7 @@ background-color: var(--basic-red);
 }
 
 .modal-footer .rectangle {
-  width: 380px;
+  width: 460px;
 }
 
 .find-us {
