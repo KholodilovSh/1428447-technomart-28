@@ -152,21 +152,19 @@ img {
   box-sizing: border-box;
 }
 
-.main-header button,
-.card button;
-.slider button,
-.modal button,
-.catalog button {
-  color: inherit;
-  border: none;
-}
-
-.header li,
-.index li,
-.catalog li,
-.footer li {
+.site-navigation,
+.products ul,
+.footer-navigation ul,
+.under-footer ul,
+.servicies ul,
+.about-us ul,
+.filtors ul,
+.sort-list ul,
+.path {
   list-style-type: none;
 }
+
+
 
 /* Header */
 .main-header {
