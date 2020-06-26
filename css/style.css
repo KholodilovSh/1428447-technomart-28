@@ -566,15 +566,13 @@ img {
 .product-cards {
 
 }
-.product-cards h3 {
-  font-family: "PT Sans","Arial", sans-serif;
-  font-weight: bold;
-  color: var(--basic-black);
-}
 
 .product-cards h3 {
+  font-family: "PT Sans","Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
+  font-weight: bold;
+  color: var(--basic-black);
 }
 
 .product-cards p {
@@ -590,7 +588,7 @@ img {
 .card {
   position: relative;
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   border: 1px solid var(--card-border);
 }
 
@@ -951,11 +949,67 @@ img {
 
 
 .catalog h1 {
+  width: 940px;
+  height: 89px;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-text-color);
   background-color: var(--catalog-fon-perforators);
   text-transform: uppercase;
+  padding-left: 29px;
+  padding-top: 29px;
+}
+
+.filtors h2,
+.sort-list h2,
+.sort-list li {
+  height: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: var(--catalog-fon-filters);
+  padding-left: 18px;
+  padding-top: 10px;
+}
+
+.filtors h3 {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.filtors ul {
+  margin: 0 0;
+  padding: 0;
+}
+
+.filtors button {
+  height: 38px;
+  width: 220px;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-grey10);
+  text-transform: uppercase;
+}
+
+.sort-position label {
+  /* color: var(--basic-red); */
+  padding-bottom: 2px;
+  border-bottom: 1px dotted var(--basic-red);
+  opacity: 0.3;
+}
+
+.sort-position label:checked {
+  color: var(--basic-red);
+  border: none;
+  opacity: 1;
+}
+
+.sort-position label:hover {
+  /* color: var(--basic-red); */
+  border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
 }
 
 .pages {
@@ -1012,14 +1066,14 @@ img {
   bottom: 0;
   left: 0;
   margin: auto;
-  /* display: none; */
+  display: none;
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.find-us {
+/* .find-us {
   display: none;
-}
+} */
 
 /* Modal close */
 .modal-close {
@@ -1206,6 +1260,19 @@ img {
 
 .modal-basket .white-rectangle:hover  {
   font-weight: bold;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-button:hover path:first-child,
+.social-button:focus path:first-child {
+  fill: var(--basic-red);
 }
 
 /* Повышаем приоритет */
