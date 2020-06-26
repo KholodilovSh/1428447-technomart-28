@@ -94,13 +94,33 @@
   </ul>
   <h1>перфораторы</h1>
 
-  <section class="filtors">
+  <section class="filters">
     <h2>фильтр:</h2>
     <form action="https://echo.htmlacademy.ru/courses" method="get">
       <div>
         <h3>цена:</h3>
-        <input type="range" name="price" min="0" max="30000" step="100">
-        <p> 0 - 30000</p>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"
+                style= "
+                width: 30%;
+                margin-left: 20%;"
+              ></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"
+              style="left: 20%;"
+            ></div>
+            <div class="toggle toggle-max" tabindex="0"
+              style="left: 50%;"
+            ></div>
+          </div>
+          <div class="price-controls">
+            <input type="number" name="min-price" value="0">
+            <scan>-</scan>
+            <input type="number" name="max-price" value="30000">
+          </div>
+        </div>
       </div>
       <div>
         <h3>производители:</h3>
