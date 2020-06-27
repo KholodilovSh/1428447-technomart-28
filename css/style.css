@@ -20,6 +20,7 @@ input[type="radio"].visually-hidden {
   --basic-black1:       #32425C;
   --basic-black2:       #161D29;
   --basic-black3:       #293449;
+  --basic-black4:       #1D2739;
 
   /* оттенки зеленого*/
   --basic-green:        #63A63E;
@@ -118,10 +119,10 @@ input[type="radio"].visually-hidden {
   --order-pointer:       var(--basic-green1);
 
    /* Купить - (Каталог) */
-  --bue-rest:           var(--basic-green);
-  --bue-rest-pointer:   var(--basic-green1);
-  --bue-rest-click:     var(--basic-green2);
-  --bue-rest-shadow:    var(--basic-green3);
+  --bye-rest:           var(--basic-green);
+  --bye-rest-pointer:   var(--basic-green1);
+  --bye-rest-click:     var(--basic-green2);
+  --bye-rest-shadow:    var(--basic-green3);
 
    /* В закладки */
   --marker-rest:        var(--basic-green);
@@ -192,8 +193,15 @@ img {
 
 .upper-word p,
 .upper-word form {
+  height: 42px;
   padding-left: 35px;
   padding-top: 9px;
+}
+
+.upper-word input {
+  padding: 0;
+  border: none;
+  width: 100%;
 }
 
 .bye p::before,
@@ -228,6 +236,24 @@ img {
   background-image: url("../img/icon-search.svg");
 }
 
+.upper-word:hover form::before,
+.upper-word:hover p::before {
+  fill: white;
+  opacity: 1;
+}
+
+.upper-word:active p {
+  opacity: 0.5;
+}
+.upper-word:active form {
+  background-color: var(--basic-white);
+}
+
+.upper-word:active form::before {
+  fill: var(--basic-red);
+  opacity: 1;
+}
+
 .not-empty {
   background-color: var(--basic-red);
 }
@@ -240,6 +266,15 @@ img {
   color: var(--basic-white);
   background-color: var(--order-rest);
   border: none;
+}
+
+.order:hover  {
+  background-color: var(--order-pointer);
+}
+
+.order:active  {
+  background-color: var(--order-rest);
+  color: rgba(255,255,255,0.5);
 }
 
 .our-description {
@@ -295,12 +330,29 @@ img {
   color: var(--basic-text-color);
 }
 
+.user-navigation .white-rectangle:hover {
+  color: var(--basic-red);
+}
+
+.user-navigation .white-rectangle:active {
+  color: var(--basic-greylight);
+}
+
 .site-navigation {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
   background: var(--nav-color);
   box-shadow: inset 0px -5px 0px var(--nav-color-shadow);
+}
+
+.site-navigation a:hover {
+  background: var(--upper-string);
+}
+
+.site-navigation a:active {
+  background: var(--basic-black4);
+  opacity: 0.5;
 }
 
 /* main */
@@ -341,6 +393,7 @@ img {
 .white-rectangle .registr {
   padding-right: 24px;
 }
+
 .white-rectangle .login::before {
   content: "";
   position: absolute;
@@ -351,6 +404,10 @@ img {
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.white-rectangle:hover .login::before {
+  background-image: url("../img/icon-login-hover.svg");
 }
 
 .user-navigation .white-rectangle:last-of-type {
@@ -698,11 +755,11 @@ img {
 
 .green-rectangle.bye:hover,
 .green-rectangle.bye:focus {
-  background-color: var(--bue-rest-pointer);
+  background-color: var(--bye-rest-pointer);
 }
 
 .green-rectangle.bye:active {
-  background-color: var(--bue-rest-click);
+  background-color: var(--bye-rest-click);
 }
 
 .green-rectangle.take:hover {
@@ -721,6 +778,14 @@ img {
   width: 220px;
   height: 145px;
   border: 1px solid var(--spetial-greylight);
+}
+
+.manufactories li:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.manufactories li:active {
+  opacity: 0.5;
 }
 
 /* Сервисы */
@@ -880,6 +945,18 @@ img {
   background-position: 0 0;
 }
 
+.white-fon .user:hover::before {
+  background-image: url("../img/icon-user-hover.svg");
+}
+
+.white-fon .user:active::before {
+  background-image: url("../img/icon-user.svg");
+}
+
+.white-fon .user:active{
+  color: var(--basic-greylight);
+}
+
 .white-fon .out::before {
   content: "";
   position: absolute;
@@ -890,6 +967,14 @@ img {
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.white-fon .out:hover::before {
+  background-image: url("../img/icon-logout-hover.svg");
+}
+
+.white-fon .out:active::before {
+  background-image: url("../img/icon-logout.svg");
 }
 
 .my-navigation {
@@ -910,6 +995,15 @@ img {
   border-radius: 50%;
   background-color: var(--basic-text-color);
 }
+
+.my:hover {
+  color: var(--basic-red);
+}
+
+.my:active {
+  color: var(--basic-greylight);
+}
+
 
 /* Каталог-main */
 .catalog {
