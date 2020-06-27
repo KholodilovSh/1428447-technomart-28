@@ -155,7 +155,7 @@
             <label for="filter-accumulators">аккумуляторные</label>
           </li>
           <li>
-            <input class="custom-radiobox" id="filter-_220v" type="radio" name="supply" value="_220v"  disabled>
+            <input class="custom-radiobox" id="filter-_220v" type="radio" name="supply" value="_220v">
             <label for="filter-_220v">сетевые</label>
           </li>
         </ul>
@@ -168,26 +168,26 @@
       <h2>сортировка:</h2>
       <ul class="sort-position">
         <li>
-          <input id="sort-price" type="radio" name="sort-variant" value="price" checked>
+          <input class="custom-radio sort-variant" id="sort-price" type="radio" name="sort-variant" value="price" checked>
           <label for="sort-price">по цене</label>
         </li>
         <li>
-          <input id="sort-type" type="radio" name="sort-variant" value="type">
+          <input class="custom-radio sort-variant" id="sort-type" type="radio" name="sort-variant" value="type">
           <label for="sort-type">по типу</label>
         </li>
         <li>
-          <input id="sort-functionality" type="radio" name="sort-variant" value="functionality">
+          <input class="custom-radio sort-variant" id="sort-functionality" type="radio" name="sort-variant" value="functionality">
           <label for="sort-functionality">по функционалу</label>
         </li>
       </ul>
       <ul class="sort-direction">
         <li>
-          <input id="sort-up" type="radio" name="sort-direction" value="up" checked>
-          <label for="sort-up">сортировать по убыванию</label>
+          <input class="custom-radio direction-up" id="sort-up" type="radio" name="sort-direction" value="up" checked>
+          <label for="sort-up" aria-label="сортировать по убыванию"></label>
         </li>
         <li>
-          <input id="sort-down" type="radio" name="sort-direction" value="down">
-          <label for="sort-down">сортировать по возрастанию</label>
+          <input class="custom-radio direction-down" id="sort-down" type="radio" name="sort-direction" value="down">
+          <label for="sort-down" aria-label="сортировать по возрастанию"></label>
         </li>
       </ul>
       <input type="submit">

@@ -1061,23 +1061,101 @@ img {
   font-size: inherit;
 }
 
+/* Радиокнопки Сортировка */
+.sort-list {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 700px;
+  min-height: 38px;
+}
+
+.sort-list h2,
+.sort-list ul {
+  display: inline;
+}
+
+
 .sort-position label {
-  /* color: var(--basic-red); */
   padding-bottom: 2px;
   border-bottom: 1px dotted var(--basic-red);
   opacity: 0.3;
 }
 
-.sort-position label:checked {
+.sort-position label:hover {
+  border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
+}
+
+.sort-variant:checked+label {
   color: var(--basic-red);
   border: none;
   opacity: 1;
 }
 
-.sort-position label:hover {
-  /* color: var(--basic-red); */
-  border-bottom: 1px solid var(--basic-red);
-  opacity: 1;
+.sort-position li,
+.sort-direction li {
+  display: inline;
+  padding: 0;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.direction-down+label::before,
+.direction-up+label::before {
+  content: "";
+  /* Увеличил размеры по сравнению с макетом, т.к. маленькие */
+  width: 22px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-image: url("../img/icon-down-dir.svg");
+  margin-top: auto;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.direction-up+label::before {
+  /* Между кнопками 21px, разделяю кликабельную область */
+  /* после поворота будет margin-right */
+  margin-left: 11px;
+  margin-right: 10px;
+  transform: rotate(180deg);
+}
+
+.direction-down+label::before{
+  margin-right: 17px;
+  margin-left: 10px;
+}
+
+.direction-up:checked+label::before,
+.direction-down:checked+label::before {
+  background-image: url("../img/icon-down-dir-check.svg");
+}
+
+.direction-up:checked+label::before {
+  transform: rotate(180deg);
+}
+
+.direction-up:hover+label::before,
+.direction-down:hover+label::before {
+  background-image: url("../img/icon-down-dir-hover.svg");
+}
+
+.direction-up:hover+label::before {
+  transform: rotate(180deg);
 }
 
 .custom-checkbox {
@@ -1165,6 +1243,7 @@ img {
 .custom-radiobox:disabled+label {
   opacity: 0.4;
 }
+
 .pages {
   width: 284px;
   margin-left: 0;
