@@ -1022,27 +1022,25 @@ img {
   margin-left: 40px;
 }
 
-.path a::before {
+.path a::before,
+.path .home::before {
   content: "";
   position: absolute;
   top: 7px;
   left: -20px;
-  width: 8px;
   height: 12px;
-  background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.path a::before {
+  width: 8px;
+  background-image: url("../img/icon-right-small.svg");
+}
+
 .path .home::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    width: 14px;
-    height: 12px;
-    background-image: url("../img/icon-home.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  width: 14px;
+  background-image: url("../img/icon-home.svg");
 }
 
 
