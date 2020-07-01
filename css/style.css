@@ -386,6 +386,7 @@ img {
   height: 45px;
   background-color: var(--basic-white);
 }
+
 .white-rectangle .login {
   padding-right: 27px;
 }
@@ -809,32 +810,61 @@ img {
   font-family: "PT Sans","Arial", sans-serif;
 }
 
-.servicies li {
+.servicies-variants {
+  position: relative;
+  width: 240px;
+}
+
+.servicies-variants li:first-child::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  right: -44px;
+  top: -48px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.service-button {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.service-button+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
   width: 240px;
   height: 61px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
   color: var(--basic-white);
   background-color: var(--fon-service);
+  padding-left: 22px;
   box-shadow:
     0px 1px 0px var(--basic-black3),
     inset 0px 1px 0px var(--basic-grey8);
+  cursor: pointer;
 }
 
-.servicies li:first-child {
+.service-button:checked+label {
   color: var(--basic-text-color);
   background-color: var(--basic-white);
   box-shadow:
     0px 1px 0px var(--basic-white);
 }
 
-.servicies .service-button {
-  padding-left: 22px;
-  padding-top: 13.5px;
+.service-button:not(:disabled):not(:checked)+label:hover {
+  background-color: var(--basic-black3);
 }
 
-.servicies label {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 30px;
+.service-button:checked+label:hover {
+  font-size: 23px;
 }
 
 /* О компании */
@@ -911,6 +941,17 @@ img {
   color: var(--footer-text-color1);
 }
 
+.footer-navigation li:focus,
+.footer-navigation li:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation li:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+
 .under-footer{
   font-size: 16px;
   line-height: 18px;
@@ -922,6 +963,14 @@ img {
   color: var(--footer-text-color1);
 }
 
+.under-footer .link-footer:hover {
+  text-decoration: underline;
+}
+
+.under-footer .link-footer:active {
+  color: var(--basic-red);
+  text-decoration: none;
+}
 /* Каталог-Хедер */
 .white-fon {
   display: flex;
@@ -1261,6 +1310,7 @@ img {
   align-items: center;
   user-select: none;
 }
+
 .custom-checkbox+label::before {
   content: "";
   width: 24px;
@@ -1307,6 +1357,7 @@ img {
   align-items: center;
   user-select: none;
 }
+
 .custom-radiobox+label::before {
   content: "";
   width: 25px;
