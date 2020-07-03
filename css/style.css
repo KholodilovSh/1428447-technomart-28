@@ -187,8 +187,6 @@ img {
 
 .upper-word {
   position: relative;
-  width: 136px;
-  height: 42px;
 }
 
 .upper-word p,
@@ -205,18 +203,29 @@ img {
 }
 
 .bye p::before,
-.upper-word p::before,
-.upper-word form::before {
+.upper-word::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icon-cart.svg");
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+}
+
+.upper-word.bookmark::before {
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+}
+
+.bye p::before,
+.upper-word.basket::before {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
 }
 
 .bye p::before {
@@ -224,27 +233,15 @@ img {
   left: 30px;
 }
 
-.upper-word .bookmark::before {
-  width: 14px;
-  height: 16px;
-  background-image: url("../img/icon-bookmark.svg");
-}
-
-.upper-word form::before {
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/icon-search.svg");
-}
-
-.upper-word:hover form::before,
-.upper-word:hover p::before {
+.upper-word:hover::before {
   fill: white;
   opacity: 1;
 }
 
-.upper-word:active p {
+.upper-word:active {
   opacity: 0.5;
 }
+
 .upper-word:active form {
   background-color: var(--basic-white);
 }
@@ -822,7 +819,7 @@ img {
   height: 279px;
   right: -44px;
   top: -48px;
-  background-image: url("../img/shadow.png");
+  background-image: url("../img/shadow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
