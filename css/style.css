@@ -174,11 +174,21 @@ img {
 
 /* Header */
 .main-header {
+  width: 940px;
 /* вставил фиктивный цвет, чтобы отслеживать работу фона */
   background-color: var(--basic-grey3);
+
 }
 
 .upper-string {
+  position: absolute;
+  height: 42px;
+  width: 720px;
+  top: 0;
+  left:220px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-size:18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -189,11 +199,28 @@ img {
   position: relative;
 }
 
-.upper-word p,
+.upper-word.search {
+  flex-grow: 2;
+}
+
+.upper-word.bookmark,
+.upper-word.basket {
+  width: 136px;
+  height: 42px;
+  padding-top: 9px;
+  padding-left: 12px;
+}
+
+.upper-word.basket {
+  width: 136px;
+}
+.upper-word.bookmark {
+  width: 153px;
+}
+
 .upper-word form {
   height: 42px;
-  padding-left: 35px;
-  padding-top: 9px;
+  padding-left: 42px;
 }
 
 .upper-word input {
@@ -207,14 +234,18 @@ img {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
 }
 
+.upper-word.search::before {
+  width: 17px;
+  height: 17px;
+  margin-left: 17px;
+  margin-top: 12px;
+  background-image: url("../img/icon-search.svg");
+}
 .upper-word.bookmark::before {
   width: 14px;
   height: 16px;
@@ -336,18 +367,29 @@ img {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  /* align-content: center; */
   font-size: 18px;
   line-height: 24px;
+  padding: 0;
+  margin-bottom: 60px;
   color: var(--basic-white);
   background: var(--nav-color);
   box-shadow: inset 0px -5px 0px var(--nav-color-shadow);
 }
 
-.site-navigation a:hover {
+.site-navigation a {
+  padding: 16px 20px 19px 20px;
+}
+
+.site-navigation li:hover {
   background: var(--upper-string);
 }
 
-.site-navigation a:active {
+.site-navigation li:active {
   background: var(--basic-black4);
   opacity: 0.5;
 }
