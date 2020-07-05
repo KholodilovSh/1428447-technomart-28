@@ -84,10 +84,9 @@ input[type="radio"].visually-hidden {
   --background-service: var(--basic-grey2);
   --fon-service:        var(--basic-black1);
 
-  /* О компании*/
-  --background-about-us: var(--basic-grey9);
-  /* Контакты */
-  --background-contacts: var(--basic-grey9);
+  /* Before Footer */
+  /* О компании*//* Контакты */
+  --background-before-footer: var(--basic-grey9);
 
    /* Футер */
   --footer-nav-color:    var(--basic-black1);
@@ -906,29 +905,56 @@ img {
   font-size: 23px;
 }
 
-/* О компании */
-.about-us {
-  background-color: : var(--background-about-us);
+/* Последний блок перед футером "О нас", "Контакты" */
+.before-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 940px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: : var(--background-before-footer);
 }
 
-.about-us h2,
-.about-us p,
+.before-footer h2,
+.before-footer p,
 .about-us li {
   color: var(--basic-black);
 }
 
-.about-us h2 {
+.before-footer p:first-of-type {
+  margin-top: 0;
+}
+
+.before-footer p:last-of-type {
+  margin-bottom: 1px;
+}
+
+.before-footer h2 {
+  padding-top: 0;
+  padding-bottom: 24px;
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
+/* О компании */
+.about-us {
+  width: 440px;
+}
+
 .about-us .rectangle {
   width: 220px;
+}
+.about-us ul {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .about-us li {
   position: relative;
+  padding-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-black);
@@ -945,21 +971,6 @@ img {
 }
 
 /* Контакты */
-.contacts {
-  background-color: : var(--background-contacts);
-}
-
-.contacts h2,
-.contacts p {
-  color: var(--basic-black);
-}
-
-.contacts h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .contacts .rectangle {
   width: 300px;
 }
