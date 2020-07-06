@@ -496,8 +496,7 @@ header nav {
 
 .feature  .rectangle {
   width: 135px;
-  background: var(--basic-white);
-  opacity: 0.3;
+  background: rgba(255,255,255,0.3);
 }
 
 .feature::after {
