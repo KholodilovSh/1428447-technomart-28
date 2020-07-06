@@ -340,8 +340,9 @@ img {
   height: 45px;
   font-size: 21px;
   line-height: 30px;
-  color: var(--basic-red);
   border: 3px solid var(--basic-white);
+  margin-bottom: 3px;
+  color: var(--basic-red);
 }
 
 .telephone a {
@@ -363,6 +364,7 @@ img {
 .header-adress {
   font-size: 14px;
   line-height: 24px;
+  padding-left: 9px;
 }
 
 .user-navigation {
@@ -683,9 +685,34 @@ header nav {
 }
 
 /* Популярные товары/производители */
-.popular h2 {
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 89px;
+  margin-bottom: 20px;
+  background-color: var(--fon-for-traders);
+}
+
+.popular-header  h2 {
+  margin-left: 28px;
   text-transform: uppercase;
-  background-color: : var(--fon-for-traders);
+}
+
+.popular-header  div {
+  margin-right: 14px;
+}
+
+.popular ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.popular li {
+margin-bottom: 20px;
 }
 
 .product-cards {
