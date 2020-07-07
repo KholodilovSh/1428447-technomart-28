@@ -262,8 +262,9 @@ img {
 }
 
 .bye p::before {
+  position: absolute;
   top: 10px;
-  left: 30px;
+  left: 20px;
 }
 
 .upper-word:hover::before {
@@ -844,10 +845,6 @@ margin-bottom: 20px;
   padding: 0;
   text-transform: uppercase;
   display: none;
-}
-
-.green-rectangle p {
-  margin-left: 29px;
 }
 
 .green-rectangle.bye {
