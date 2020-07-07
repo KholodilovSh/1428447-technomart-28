@@ -481,6 +481,19 @@ header nav {
 }
 
 /* PROMO */
+.promo {
+  display: grid;
+  grid-template-rows: 123px 123px 123px;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+  margin-bottom: 59px;
+}
+
+.promo .slider {
+  grid-row: 2 / 4;
+  grid-column: 1 / 3;
+}
+
 .promo h3,
 .promo h4,
 .promo p {
