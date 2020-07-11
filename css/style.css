@@ -254,7 +254,7 @@ img {
   width: 100%;
 }
 
-.bye p::before,
+.bye scan::before,
 .upper-word::before {
   content: "";
   display: inline-block;
@@ -281,14 +281,14 @@ img {
   background-image: url("../img/icon-bookmark.svg");
 }
 
-.bye p::before,
+.bye scan::before,
 .upper-word.basket::before {
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
 }
 
-.bye p::before {
+.bye scan::before {
   position: absolute;
   top: 9px;
   left: 18px;
