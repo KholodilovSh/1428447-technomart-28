@@ -28,6 +28,7 @@ input[type="radio"].visually-hidden {
   --basic-green2:       #518534;
   --basic-green3:       #367315;
   --spetial-greenlight: #8ED78F;
+  --basic-green-bar:    #00FF00;
 
   /* оттенки серого*/
   --basic-grey:         #A9A9A9;
@@ -203,8 +204,28 @@ img {
   position: relative;
 }
 
-.upper-word.search {
+.search {
   flex-grow: 2;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.search input {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  flex-grow: 1;
+  margin-left: 8px;
+  background-color: transparent;
+}
+
+.search:focus-within {
+  background-color: var(--basic-white);
+}
+
+.search:focus::before {
+  path: var(--basic-red);
 }
 
 .upper-word.bookmark,
@@ -244,10 +265,14 @@ img {
 }
 
 .upper-word.search::before {
-  width: 17px;
+  width: 21px;
   height: 17px;
   margin-left: 17px;
   background-image: url("../img/icon-search.svg");
+}
+
+.search:focus-within {
+  background-color: var(--basic-white);
 }
 
 .upper-word.bookmark::before {
@@ -348,6 +373,7 @@ img {
   width: 270px;
   height: 45px;
   font-size: 21px;
+  font-weight: 700;
   line-height: 30px;
   border: 3px solid var(--basic-white);
   margin-bottom: 3px;
@@ -355,14 +381,15 @@ img {
 }
 
 .telephone a {
-  padding-left: 74px;
+  padding-left: 72px;
+  margin-bottom: 1px;
 }
 
 .telephone a::before {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 39px;
+  top: 10px;
+  left: 36px;
   width: 19px;
   height: 19px;
   background-image: url("../img/icon-phone.svg");
@@ -406,7 +433,7 @@ img {
 .site-navigation {
   display: flex;
   justify-content: space-around;
-  height: 60px;
+  height: 62px;
   align-items: center;
   font-size: 18px;
   line-height: 24px;
@@ -439,12 +466,20 @@ img {
 }
 
 header nav {
-  padding-bottom: 60px;
+  padding-bottom: 59px;
 }
 /* main */
 .index,
 .catalog {
   background-color: var(--basic-white);
+}
+
+.index h2,
+.catalog h1,
+.catalog h2,
+.before-footer-catalog h3,
+.servicies h3  {
+  font-weight: 400;
 }
 
 .rectangle {
@@ -761,6 +796,10 @@ div.for-manufactories {
 margin-bottom: 20px;
 }
 
+.popular-header a {
+  margin-bottom: 2px;
+}
+
 .product-cards {
   display: grid;
   grid-template-columns: 220px 220px 220px;
@@ -776,11 +815,6 @@ margin-bottom: 20px;
   line-height: 20px;
   font-weight: bold;
   color: var(--basic-black);
-}
-
-.rectangle.price > p {
-  font-size: 17px;
-  line-height: 18px;
 }
 
 .product-cards .old-price {
@@ -800,6 +834,8 @@ margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 209px;
+  height: 168px;
 }
 
 .card h3,
@@ -922,6 +958,7 @@ margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 6px;
   width: 220px;
   height: 145px;
   border: 1px solid var(--spetial-greylight);
@@ -946,7 +983,7 @@ margin-bottom: 20px;
 }
 
 .servicies-header > p:last-of-type {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .servicies-slider {
@@ -1024,9 +1061,9 @@ margin-bottom: 20px;
   content: "";
   width: 10px;
   height: 279px;
-  left: 240px;
+  left: 230px;
   top: -48px;
-  background-image: url("../img/shadow.svg");
+  background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1068,7 +1105,7 @@ margin-bottom: 20px;
 }
 
 .service-button:checked+label:hover {
-  font-size: 23px;
+  color: var(--basic-red);
 }
 
 /* Последний блок перед футером "О нас", "Контакты" */
@@ -1118,8 +1155,8 @@ margin-bottom: 20px;
 .about-us ul {
   padding-left: 37px;
   margin-top: 0;
-  /* 7px + 12px(li.padding) = 19px */
-  margin-bottom: 7px;
+  /* 9px + 12px(li.padding) = 21px */
+  margin-bottom: 9px;
 }
 
 .about-us li {
@@ -1151,7 +1188,7 @@ margin-bottom: 20px;
 
 .index-map {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 /* Футер Навигация */
@@ -1368,7 +1405,7 @@ margin-bottom: 20px;
   display: flex;
   background-color: var(--basic-white);
   padding: 0;
-  margin-top: 17px;
+  margin-top: 18px;
 }
 
 .path li {
@@ -1411,7 +1448,7 @@ margin-bottom: 20px;
   background-color: var(--catalog-fon-perforators);
   text-transform: uppercase;
   padding-left: 29px;
-  padding-top: 29px;
+  padding-top: 27px;
 }
 
 .catalog-wrapper {
@@ -1502,11 +1539,11 @@ margin-bottom: 20px;
 
 
 .take-manufacturer h3 {
-  margin: 15px 0;
+  margin: 13px 0 17px 0;
 }
 
 .take-supply h3 {
-  margin: 18px 0 21px 0;
+  margin: 16px 0 23px 0;
 }
 
 .take-manufacturer li {
@@ -1531,10 +1568,10 @@ margin-bottom: 20px;
 }
 
 .range-controls .bar {
-  width: 90%;
+  width: 65%;
   height: 2px;
-  background-color: rgb(0,255,0);
-  /* var(--basic-green1); */
+  margin-left: 12%;
+  background-color: var(--basic-green-bar);
   opacity: 0.5;
 }
 
@@ -1553,11 +1590,11 @@ margin-bottom: 20px;
 }
 
 .range-controls .toggle-min {
-  left: 20px;
+  left: 8%;
 }
 
 .range-controls .toggle-max {
-  left: 170px;
+  left: 73%;
 }
 
 .price-controls {
@@ -1824,12 +1861,12 @@ margin-bottom: 20px;
 }
 
 .before-footer-catalog h3 {
-  padding-top: 66px;
+  padding-top: 65px;
   padding-bottom: 27px;
 }
 
 .before-footer-catalog p {
-  padding-bottom: 71px;
+  padding-bottom: 70px;
   text-transform: none;
 }
 /* скрытые окна */
@@ -2070,4 +2107,9 @@ button.rectangle,
   position: relative;
   width: 940px;
   margin: 0 auto;
+}
+
+.rectangle.price > p {
+  font-size: 17px;
+  line-height: 18px;
 }
