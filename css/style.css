@@ -221,6 +221,10 @@ img {
   background-color: transparent;
 }
 
+.search input::placeholder {
+  color: var(--basic-white);
+}
+
 .search input:focus {
   outline: none;
   color: var(--basic-black);
