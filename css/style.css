@@ -217,15 +217,21 @@ img {
   width: auto;
   flex-grow: 1;
   margin-left: 8px;
+  color: var(--basic-white);
   background-color: transparent;
+}
+
+.search input:focus {
+  outline: none;
+  color: var(--basic-black);
 }
 
 .search:focus-within {
   background-color: var(--basic-white);
 }
 
-.search:focus::before {
-  path: var(--basic-red);
+.search:focus-within svg {
+  fill: var(--basic-red);
 }
 
 .upper-word.bookmark,
@@ -264,11 +270,11 @@ img {
   opacity: 0.3;
 }
 
-.upper-word.search::before {
+.search svg{
   width: 21px;
   height: 17px;
   margin-left: 17px;
-  background-image: url("../img/icon-search.svg");
+  fill: var(--basic-white);
 }
 
 .search:focus-within {
