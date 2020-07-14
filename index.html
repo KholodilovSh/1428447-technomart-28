@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>ТЕХНОМАРТ-интернет магазин</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="main-header">
   <div class="main-header-strip1">
-    <div class="container">
+    <div class="container header-container">
       <a href="#"  class="main-header-logo">
         <img src="img/index-logo.svg" width="220" height="47" alt="логотип техномарт">
       </a>
@@ -52,6 +52,7 @@
               +7 (812) 555-05-55
           </a>
         </div>
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
 
       <div class="user-navigation">
@@ -123,11 +124,11 @@
           открыть каталог
         </a>
         <!-- управление слайдами -->
-        <button class="pad-button"  type="button">
-          <img class="prev" src="img/icon-left.png" width="22" height="40" alt="предыдущий слайд">
+        <button class="pad-button prev"  type="button">
+          <img src="img/icon-left.png" width="22" height="40" alt="предыдущий слайд">
         </button>
-        <button class="pad-button" type="button">
-          <img class="next" src="img/icon-left.png" width="22" height="40" alt="следующий слайд">
+        <button class="pad-button next" type="button">
+          <img src="img/icon-left.png" width="22" height="40" alt="следующий слайд">
         </button>
         <div class="spots">
           <button class="spot checked" type="button" data-filter="1"></button>
@@ -233,7 +234,7 @@
           все производители
         </a>
       </div>
-      <ul>
+      <ul class="list-manufacturers">
         <li>
           <a href="#">
             <img src="img/partner-bosch.png" width="128" height="37" alt="партнер bosch">
@@ -287,15 +288,15 @@
       <div class="services-slider">
         <ul class="services-variants">
           <li>
-            <input class="service-button" id="delivery" type="radio" name="service" value="delivery" checked>
+            <input class="service-button visually-hidden" id="delivery" type="radio" name="service" value="delivery" checked>
             <label for="delivery">Доставка</label>
           </li>
           <li>
-            <input class="service-button" id="garanty" type="radio" name="service" value="garanty">
+            <input class="service-button visually-hidden" id="garanty" type="radio" name="service" value="garanty">
             <label for="garanty">Гарантия</label>
           </li>
           <li>
-            <input class="service-button" id="credit" type="radio" name="service" value="credit">
+            <input class="service-button visually-hidden" id="credit" type="radio" name="service" value="credit">
             <label for="credit">Кредит</label>
           </li>
         </ul>
@@ -360,7 +361,7 @@
       Вы можете забрать товар сами,<br>
   	  заехав в наш офис:
   	  </p>
-      <a class="index-map" href="stat-map.html">
+      <a class="index-map" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
         <img src="img/index-map.png" width="300" height="158" alt="офис техномарт на карте">
       </a>
       <a class="rectangle" href="write-us.html">
@@ -407,7 +408,7 @@
 
       <section>
         <h2  class="visually-hidden">Социальные сети</h2>
-        <ul>
+        <ul class="social-block">
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>

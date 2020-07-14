@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог - ТЕХНОМАРТ-интернет магазин</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="main-header">
   <div class="main-header-strip1">
-    <div class="container">
+    <div class="container header-container">
       <a href="index.html" class="main-header-logo">
         <img src="img/index-logo.svg" width="220" height="47" alt="логотип техномарт">
       </a>
@@ -28,7 +28,7 @@
         <a href="#" class="bookmark upper-word">
           Закладки: 0
         </a>
-        <a href="#" class="basket upper-word c">
+        <a href="#" class="basket upper-word not-empty">
           Корзина: 10
         </a>
         <a href="#" class="order">
@@ -52,6 +52,7 @@
               +7 (812) 555-05-55
           </a>
         </div>
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
 
       <div class="user-navigation">
@@ -128,23 +129,23 @@
             <h3>производители:</h3>
             <ul>
               <li>
-                <input class="custom-checkbox" id="filter-bosch" type="checkbox" name="bosch" checked>
+                <input class="custom-checkbox visually-hidden" id="filter-bosch" type="checkbox" name="bosch" checked>
                 <label for="filter-bosch">bosch</label>
               </li>
               <li>
-                <input class="custom-checkbox" id="filter-интерскол" type="checkbox" name="интерскол">
+                <input class="custom-checkbox visually-hidden" id="filter-интерскол" type="checkbox" name="интерскол">
                 <label for="filter-интерскол">интерскол</label>
               </li>
               <li>
-                <input class="custom-checkbox" id="filter-makita" type="checkbox" name="makita" checked>
+                <input class="custom-checkbox visually-hidden" id="filter-makita" type="checkbox" name="makita" checked>
                 <label for="filter-makita">makita</label>
               </li>
               <li>
-                <input class="custom-checkbox" id="filter-dewalt" type="checkbox" name="dewalt">
+                <input class="custom-checkbox visually-hidden" id="filter-dewalt" type="checkbox" name="dewalt">
                 <label for="filter-dewalt">dewalt</label>
               </li>
               <li>
-                <input class="custom-checkbox" id="filter-hitachi" type="checkbox" name="hitachi">
+                <input class="custom-checkbox visually-hidden" id="filter-hitachi" type="checkbox" name="hitachi">
                 <label for="filter-hitachi">hitachi</label>
               </li>
             </ul>
@@ -153,11 +154,11 @@
             <h3>питание:</h3>
             <ul>
               <li>
-                <input class="custom-radiobox" id="filter-accumulators" type="radio" name="supply" value="accumulators" checked>
+                <input class="custom-radiobox visually-hidden" id="filter-accumulators" type="radio" name="supply" value="accumulators" checked>
                 <label for="filter-accumulators">аккумуляторные</label>
               </li>
               <li>
-                <input class="custom-radiobox" id="filter-_220v" type="radio" name="supply" value="_220v">
+                <input class="custom-radiobox visually-hidden" id="filter-_220v" type="radio" name="supply" value="_220v">
                 <label for="filter-_220v">сетевые</label>
               </li>
             </ul>
@@ -168,33 +169,13 @@
       <div class="catalog-list">
         <section class="sort-list">
           <h2>сортировка:</h2>
-          <form action="https://echo.htmlacademy.ru/courses" method="get">
-            <ul class="sort-position">
-              <li>
-                <input class="custom-radio sort-variant" id="sort-price" type="radio" name="sort-variant" value="price" checked>
-                <label for="sort-price">по цене</label>
-              </li>
-              <li>
-                <input class="custom-radio sort-variant" id="sort-type" type="radio" name="sort-variant" value="type">
-                <label for="sort-type">по типу</label>
-              </li>
-              <li>
-                <input class="custom-radio sort-variant" id="sort-functionality" type="radio" name="sort-variant" value="functionality">
-                <label for="sort-functionality">по функционалу</label>
-              </li>
-            </ul>
-            <ul class="sort-direction">
-              <li>
-                <input class="custom-radio direction-up" id="sort-up" type="radio" name="sort-direction" value="up" checked>
-                <label for="sort-up" aria-label="сортировать по убыванию"></label>
-              </li>
-              <li>
-                <input class="custom-radio direction-down" id="sort-down" type="radio" name="sort-direction" value="down">
-                <label for="sort-down" aria-label="сортировать по возрастанию"></label>
-              </li>
-            </ul>
-            <input class="visually-hidden" type="submit">
-          </form>
+          <ul class="sort-position">
+            <li><a class="sort-checked" href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по функционалу</a></li>
+            <li><a class="direction-up checked" href="#"></a></li>
+            <li><a class="direction-down" href="#"></a></li>
+          </ul>
         </section>
         <section class="products">
           <!---  Карточки товаров --->
@@ -417,7 +398,7 @@
 
       <section>
         <h2  class="visually-hidden">Социальные сети</h2>
-        <ul>
+        <ul class="social-block">
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>

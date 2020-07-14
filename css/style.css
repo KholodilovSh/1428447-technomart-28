@@ -11,10 +11,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-
 :root {
   /* базовые цвета*/
   --basic-white:        #FFFFFF;
+
   /* оттенки черного*/
   --basic-black:        #000000;
   --basic-black1:       #32425C;
@@ -85,6 +85,7 @@ input[type="radio"].visually-hidden {
 
    /* Фон Популярные Товары/Производители */
   --fon-for-traders:    var(--basic-grey1);
+
    /* Старая цена */
   --text-old-price:     var(--basic-grey);
   --card-border:        var(--spetial-greylight);
@@ -115,9 +116,7 @@ input[type="radio"].visually-hidden {
   --range-scale:              #D7DCDE;
   --range-toggle:             #ABABAB;
   --range-toggle-shadow:      #CFCFCF;
-
   --before-footer-backcolor:   var(--basic-grey2);
-
   --box-on-focus:             #B5B5B5;
 
   /* Цветовая динамика активных объектов
@@ -137,10 +136,9 @@ input[type="radio"].visually-hidden {
    /* В закладки */
   --marker-rest:        var(--basic-green);
   --marker-pointer:     var(--basic-black1);
-
-  --mark-done:    var(--basic-green);
-  --mark-warning: var(--spetial-yellow);
-  --mark-mistake: var(--basic-red-on-click);
+  --mark-done:          var(--basic-green);
+  --mark-warning:       var(--spetial-yellow);
+  --mark-mistake:       var(--basic-red-on-click);
 }
 
 /* Global */
@@ -184,7 +182,6 @@ img {
 
 /* Header */
 .main-header {
-/* вставил фиктивный цвет, чтобы отслеживать работу фона */
   background-color: var(--basic-grey3);
 }
 
@@ -194,8 +191,12 @@ img {
   height: 42px;
 }
 
+.header-container {
+  display: flex;
+}
+
 .upper-string {
-  position: absolute;
+  /* position: absolute; */
   height: 42px;
   width: 720px;
   top: 0;
@@ -293,6 +294,7 @@ img {
 .search:hover svg{
   opacity: 1;
 }
+
 .search:focus-within {
   background-color: var(--basic-white);
 }
@@ -357,8 +359,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  min-height: 157px;
   padding-top: 46px;
-  height: 157px;
 }
 
 .our-description {
@@ -379,6 +381,12 @@ img {
 .main-header-strip2-catalog .telephone-n-address {
   padding-right: 51px;
 }
+
+.telephone-n-address address {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
 .telephone {
   display: flex;
   align-items: center;
@@ -421,6 +429,7 @@ img {
   line-height: 21px;
   color: var(--basic-black);
 }
+
 .user-navigation .white-field {
   margin-bottom: 4px;
 }
@@ -446,7 +455,8 @@ img {
 .site-navigation {
   display: flex;
   justify-content: space-around;
-  height: 62px;
+  flex-wrap: wrap;
+  min-height: 62px;
   align-items: center;
   font-size: 18px;
   line-height: 24px;
@@ -481,6 +491,7 @@ img {
 .main-header nav {
   padding-bottom: 59px;
 }
+
 /* main */
 .index,
 .catalog {
@@ -515,6 +526,7 @@ img {
 .rectangle:active {
   background-color: var(--basic-red-on-click);
 }
+
 .white-rectangle {
   display: flex;
   justify-content: flex-end;
@@ -661,7 +673,7 @@ img {
   background: var(--promo-discount);
 }
 
-.promo .delivery{
+.promo .delivery {
   background: var(--promo-delivery);
 }
 
@@ -713,8 +725,8 @@ img {
 }
 
 .slider .pad-button {
-  /* position: absolute; */
-  /* z-index: -1; */
+  position: absolute;
+  padding: 0;
 }
 
 .slider .prev {
@@ -740,6 +752,7 @@ img {
   left: 24px;
   background-color: transparent;
 }
+
 .slide h4 {
   top: 23px;
   font-size: 36px;
@@ -753,7 +766,6 @@ img {
   font-size: 18px;
   line-height: 24px;
 }
-
 
 .slider .spots {
   position: absolute;
@@ -795,7 +807,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 89px;
+  min-height: 89px;
   margin-bottom: 20px;
   background-color: var(--fon-for-traders);
 }
@@ -803,6 +815,7 @@ img {
 .popular-header  h2 {
   font-size: 30px;
   line-height: 30px;
+  max-width: 750px;
   margin-left: 28px;
   text-transform: uppercase;
 }
@@ -904,6 +917,7 @@ img {
 .card:hover {
   box-shadow: 0px 4px 20px var(--opacity-black);
 }
+
 .card:focus img,
 .card:hover img {
   visibility: hidden;
@@ -921,6 +935,7 @@ img {
   border-bottom-left-radius: 3px;
   margin: auto;
 }
+
 .price::before,
 .price::after {
   content: "";
@@ -929,10 +944,12 @@ img {
   width: 19px;
   height: 19px;
 }
+
 .price::before{
   top: 0;
   background-image: linear-gradient(45deg, var(--basic-red) 50%, var(--basic-white) 50%);
 }
+
 .price::after {
   bottom: 0;
   background-image: linear-gradient(135deg, var(--basic-red) 50%, var(--basic-white) 50%);
@@ -1005,6 +1022,14 @@ img {
   border: 1px solid var(--spetial-greylight);
 }
 
+.list-manufactorers a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .manufactorers li:hover {
   box-shadow: 0px 4px 20px var(--opacity-black);
 }
@@ -1027,6 +1052,7 @@ img {
   font-family: "PT Sans","Arial", sans-serif;
   margin: 0;
 }
+
 .services-header > p:last-of-type {
   margin-bottom: 68px;
 }
@@ -1097,7 +1123,6 @@ img {
 }
 
 .services-variants {
-  /* position: relative; */
   width: 240px;
 }
 
@@ -1111,12 +1136,6 @@ img {
   background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.service-button {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
 }
 
 .service-button+label {
@@ -1261,6 +1280,7 @@ img {
   color: var(--footer-address-color);
 }
 
+.telephone-n-address address,
 .address address {
   font-style: normal;
 }
@@ -1284,6 +1304,7 @@ img {
 .footer-navigation .links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: auto;
 }
 
@@ -1301,6 +1322,7 @@ img {
 }
 
 .under-footer-strip {
+  padding-top: 12px;
   color: var(--basic-white);
   background-color: var(--lower-string-color);
 }
@@ -1309,7 +1331,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 107px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -1321,6 +1342,8 @@ img {
 
 .under-footer ul {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
   margin-right: 118px;
 }
 
@@ -1332,10 +1355,6 @@ img {
 .under-footer .link-footer {
   color: var(--footer-text-color1);
 }
-
-/* .under-footer .link-footer {
-  margin-right: 12px;
-} */
 
 .under-footer .link-footer:hover {
   text-decoration: underline;
@@ -1349,7 +1368,7 @@ img {
 /* Каталог-Хедер */
 .white-field {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: relative;
   width: 299px;
@@ -1359,11 +1378,10 @@ img {
 
 .white-field .user::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  left: 15px;
+  display: inline-block;
   width: 20px;
   height: 18px;
+  margin-right: 19px;
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1383,9 +1401,7 @@ img {
 
 .white-field .out::before {
   content: "";
-  position: absolute;
-  top: 14px;
-  right: 17px;
+  display: block;
   width: 20px;
   height: 17px;
   background-image: url("../img/icon-logout.svg");
@@ -1432,7 +1448,6 @@ img {
   color: var(--basic-greylight);
 }
 
-
 /* Каталог-main */
 .catalog {
   font-family: "PT Sans","Arial", sans-serif;
@@ -1450,6 +1465,7 @@ img {
 }
 
 .products h3 {
+  padding: 0px 20px;
   text-transform: none;
 }
 
@@ -1462,7 +1478,11 @@ img {
 
 .path li {
   position: relative;
-  margin-left: 40px;
+  margin-left: 18px;
+}
+
+.path li:first-child {
+  margin-left: 0;
 }
 
 .path li:nth-child(2) {
@@ -1472,8 +1492,7 @@ img {
 .path a::before,
 .path .home::before {
   content: "";
-  position: absolute;
-  top: 7px;
+  display: inline-block;
   height: 12px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1482,11 +1501,12 @@ img {
 .path a::before {
   left: -20px;
   width: 8px;
+  margin-right: 16px;
   background-image: url("../img/icon-right-small.svg");
 }
 
 .path .home::before {
-  left: -40px;
+  margin-right: 0;
   width: 14px;
   background-image: url("../img/icon-home.svg");
 }
@@ -1529,7 +1549,8 @@ img {
 }
 
 .sort-list h2 {
-  padding-left: 19px;
+  padding-left: 0;
+  margin-left: -5px;
 }
 
 .filters h2,
@@ -1605,6 +1626,7 @@ img {
 .take-supply li {
   padding-bottom: 12px;
 }
+
 .range-controls {
   position: relative;
   width: 220px;
@@ -1672,9 +1694,9 @@ img {
 /* Радиокнопки Сортировка */
 .sort-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  min-height: 38px;
+  height: 38px;
   margin-bottom: 28px;
 }
 
@@ -1683,95 +1705,81 @@ img {
   display: inline;
 }
 
-.sort-position label {
+.sort-position a {
   padding-bottom: 2px;
   border-bottom: 1px dotted var(--basic-red);
   opacity: 0.3;
 }
 
-.sort-position label:hover {
+.sort-position a:hover {
   border-bottom: 1px solid var(--basic-red);
   opacity: 1;
 }
 
-.sort-variant:checked+label {
+.sort-position .sort-checked {
   color: var(--basic-red);
   border: none;
   opacity: 1;
 }
 
-.sort-position li,
-.sort-direction li {
-  display: inline;
-  padding: 0;
-}
-
 .sort-position li {
+  display: inline;
   padding-left: 62px;
 }
 
-.custom-radio {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+.sort-position li:nth-child(4) {
+  position: relative;
+  padding-left: 46px;
 }
 
-.custom-radio+label {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
+.sort-position li:last-child {
+  position: relative;
+  padding-left: 21px;
 }
 
-.direction-down+label::before,
-.direction-up+label::before {
+.direction-down::before,
+.direction-up::before {
   content: "";
+  position: absolute;
   width: 11px;
   height: 10px;
-  display: block;
-  flex-shrink: 0;
-  flex-grow: 0;
+  top: 10px;
   background-image: url("../img/icon-down-dir.svg");
-  margin-top: auto;
-  margin-bottom: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
+  opacity: 1;
+  cursor: pointer;
 }
 
-.direction-up+label::before {
-  /* Между кнопками 21px, разделяю кликабельную область */
-  /* после поворота будет margin-right */
-  margin-left: 11px;
-  margin-right: 10px;
+.direction-up::before {
+  right: 3px;
   transform: rotate(180deg);
 }
 
-.direction-down+label::before{
-  margin-right: 17px;
-  margin-left: 10px;
+.direction-down::before{
+  right: -10px;
 }
 
-.direction-up:checked+label::before,
-.direction-down:checked+label::before {
+.direction-up.checked::before,
+.direction-down.checked::before {
   background-image: url("../img/icon-down-dir-check.svg");
 }
 
-.direction-up:checked+label::before {
+.direction-up.checked::before {
   transform: rotate(180deg);
 }
 
-.direction-up:hover:not(:checked)+label::before,
-.direction-down:hover:not(:checked)+label::before {
+.direction-up:hover:not(.checked)::before,
+.direction-down:hover:not(.checked)::before {
   background-image: url("../img/icon-down-dir-hover.svg");
 }
 
-.direction-up:hover+label::before {
+.direction-up:hover::before {
   transform: rotate(180deg);
 }
 
-.custom-checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+.direction-up:focus::before,
+.direction-down:focus::before{
+  opacity: 1;
+  outline: 2px solid var(--basic-black);
 }
 
 .custom-checkbox+label {
@@ -1799,6 +1807,10 @@ img {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.custom-checkbox:focus+label::before {
+  outline: 2px solid var(--basic-black);
+}
+
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
   background-image: url("../img/checkbox-off-focus.svg");
 }
@@ -1809,12 +1821,6 @@ img {
 
 .custom-checkbox:disabled+label {
   opacity: 0.4;
-}
-
-.custom-radiobox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
 }
 
 .custom-radiobox+label {
@@ -1834,7 +1840,6 @@ img {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 .custom-radiobox:checked+label::before {
@@ -1853,9 +1858,8 @@ img {
   opacity: 0.4;
 }
 
-.custom-checkbox+label:focus,
-.custom-radiobox+label:focus {
-  border: 1px solid var(--basic-black);
+.custom-radiobox:focus+label::before {
+  outline: 2px solid var(--basic-black);
 }
 
 .pages {
@@ -1923,6 +1927,7 @@ img {
   padding-bottom: 70px;
   text-transform: none;
 }
+
 /* скрытые окна */
 .modal {
   position: fixed;
@@ -1935,10 +1940,6 @@ img {
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--opacity-black);
 }
-
-/* .find-us {
-  display: none;
-} */
 
 /* Modal close */
 .modal-close {
@@ -1980,7 +1981,6 @@ img {
 .modal-close:hover::before {
   transform: scale(1.1)  rotate(45deg);
 }
-
 
 /* Write-Us */
 .write-us {
@@ -2111,7 +2111,6 @@ img {
   background-position: 0 0;
 }
 
-
 .modal-basket .rectangle,
 .modal-basket .white-rectangle  {
   width: 192px;
@@ -2127,8 +2126,14 @@ img {
   font-weight: bold;
 }
 
+.social-block {
+  flex-wrap: wrap;
+  max-width: 132px;
+}
+
 .social-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 44px;
