@@ -196,11 +196,10 @@ img {
 }
 
 .upper-string {
-  /* position: absolute; */
   height: 42px;
   width: 720px;
-  top: 0;
-  left: 220px;
+  /* top: 0;
+  left: 220px; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1379,6 +1378,7 @@ img {
 .white-field .user::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 18px;
   margin-right: 19px;
@@ -1493,6 +1493,7 @@ img {
 .path .home::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   height: 12px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1729,7 +1730,6 @@ img {
 .sort-direction li {
   display: inline;
   padding-left: 62px;
-  /* position: relative; */
 }
 
 .sort-direction li:first-child {
@@ -1978,7 +1978,6 @@ img {
   transform: rotate(-45deg);
 }
 
-
 .modal-close:hover::after {
   transform: scale(1.1)  rotate(-45deg);
 }
@@ -2010,6 +2009,7 @@ img {
 
 .write-us input,
 .write-us textarea {
+  font-family: "PT Sans","Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   border: 2px solid var(--write-us-grey);
@@ -2039,7 +2039,7 @@ img {
 .write-us-form {
   width: 100%;
   height: 100%;
-  }
+}
 
 .write-us-wrapper {
   display: flex;
@@ -2067,6 +2067,11 @@ img {
 
 .modal-footer .rectangle {
   width: 460px;
+}
+
+.modal-footer .white-rectangle {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .find-us {
