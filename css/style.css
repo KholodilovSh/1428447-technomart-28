@@ -1549,8 +1549,7 @@ img {
 }
 
 .sort-list h2 {
-  padding-left: 0;
-  margin-left: -5px;
+  padding-left: 21px;
 }
 
 .filters h2,
@@ -1694,7 +1693,7 @@ img {
 /* Радиокнопки Сортировка */
 .sort-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 38px;
   margin-bottom: 28px;
@@ -1703,6 +1702,10 @@ img {
 .sort-list h2,
 .sort-list ul {
   display: inline;
+}
+
+.sort-position {
+  padding-left: 79px;
 }
 
 .sort-position a {
@@ -1722,17 +1725,19 @@ img {
   opacity: 1;
 }
 
-.sort-position li {
+.sort-position li,
+.sort-direction li {
   display: inline;
   padding-left: 62px;
+  /* position: relative; */
 }
 
-.sort-position li:nth-child(4) {
+.sort-direction li:first-child {
   position: relative;
   padding-left: 46px;
 }
 
-.sort-position li:last-child {
+.sort-direction li:last-child {
   position: relative;
   padding-left: 21px;
 }
@@ -1750,12 +1755,12 @@ img {
 }
 
 .direction-up::before {
-  right: 3px;
+  right: 26px;
   transform: rotate(180deg);
 }
 
 .direction-down::before{
-  right: -10px;
+  right: 15px;
 }
 
 .direction-up.checked::before,
